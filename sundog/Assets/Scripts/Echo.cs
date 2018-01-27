@@ -13,26 +13,32 @@ public class Echo : MonoBehaviour {
 
     public void SpawnParticleSystem(Vector3 position, float arc, float angle)
     {
-        GameObject newParticle = Instantiate(particleSystem);
+        
 
-        ParticleSystem[] fxl = newParticle.GetComponentsInChildren<ParticleSystem>();
-
-        float adjustedAngle = (angle - 90) + (arc/2);
+        float adjustedAngle = (angle != 0)? (angle - 90) + (arc / 2) : 0;
 
         Vector3 rotator = new Vector3(0, 0, 0 - adjustedAngle);
 
+        GameObject newParticle = Instantiate(particleSystem);
+
+        newParticle.transform.position = position;
         newParticle.transform.rotation = Quaternion.Euler(rotator);
-  
+
+        ParticleSystem[] fxl = newParticle.GetComponentsInChildren<ParticleSystem>();
+
+        
+
         foreach (ParticleSystem fx in fxl)
         {
-            if(fx.shape.enabled)
+            if (fx.shape.enabled)
             {
                 ParticleSystem.ShapeModule tempShape = fx.shape;
                 tempShape.arc = arc;
-                
-                
             }
         }
+
+        
+        
     }
 
 	// Use this for initialization
