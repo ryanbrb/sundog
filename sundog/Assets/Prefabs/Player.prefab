@@ -1157,7 +1157,7 @@ MonoBehaviour:
   index: 3
   radius: 0
   height: 0
-  particleSystem: {fileID: 1264455181868106, guid: a4c171ff155f3a641964058cda0c2b1b,
+  particleSystem: {fileID: 1264455181868106, guid: ef755ebae41f9de499c5de9400ff915a,
     type: 2}
 --- !u!198 &198129136836558850
 ParticleSystem:
