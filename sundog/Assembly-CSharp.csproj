@@ -87,6 +87,9 @@
      <Compile Include="Assets\Scripts\DogManager.cs" />
      <Compile Include="Assets\Scripts\Echo.cs" />
      <Compile Include="Assets\Scripts\EchoSystem.cs" />
+     <Compile Include="Assets\Scripts\EchoSystem\CrappyProjector.cs" />
+     <Compile Include="Assets\Scripts\EchoSystem\Reflector.cs" />
+     <Compile Include="Assets\Scripts\EchoSystem\SoundProjector.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\MonsterManager.cs" />
      <Compile Include="Assets\Scripts\PlayerManager.cs" />

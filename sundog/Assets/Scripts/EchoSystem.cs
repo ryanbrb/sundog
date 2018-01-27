@@ -20,6 +20,7 @@ public class EchoSystem : MonoBehaviour
 
 	float timerScrollWheel = 0.0f;
 
+	public GameObject arrow;
 
 	// Use this for initialization
 	void Start ()
@@ -126,24 +127,11 @@ public class EchoSystem : MonoBehaviour
 		}
 
 
-//		Vector3 vectorArrowUp = this.transform.up;
-//
-//		this.transform.rotation = Quaternion.Slerp(vectorArrowMouse, vectorArrowUp, Time.deltaTime);
-//
-//		float rawAngle;
-//		rawAngle = Mathf.Atan2 (Input.mousePosition.y - this.transform.position.y, Input.mousePosition.x - this.transform.position.x)* Mathf.Rad2Deg;
+			float rawAngle;
+		Vector3 screenPos = Camera.main.WorldToScreenPoint(this.gameObject.transform.position);
+		rawAngle = Mathf.Atan2 (Input.mousePosition.y - screenPos.y, Input.mousePosition.x - screenPos.x)* Mathf.Rad2Deg;
 
-
-//		Vector3 vectorArrowMouse = Input.mousePosition - this.transform.position;
-//		vectorArrowMouse.z = 0;
-//		vectorArrowMouse.Normalize ();
-//
-//		this.transform.position
-//
-//		float rawAngle = Vector3.Dot (vectorArrowMouse, Input.mousePosition);
-//		this.transform.rotation = Quaternion.Euler(0, 0, vectorArrowMouse.x);
-
-		//		this.transform.rotation = Quaternion.Euler(0, 0, rawAngle + 270);
+			arrow.transform.rotation = Quaternion.Euler(0, 0, rawAngle + 270);
 
  
 	}

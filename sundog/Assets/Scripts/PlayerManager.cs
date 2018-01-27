@@ -79,25 +79,21 @@ public class PlayerManager : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-
-
-
-
 		//player moving around
-		if (Input.GetKeyDown (KeyCode.Z)) {
-			this.transform.Translate (Vector3.up);
+		if (Input.GetKey (KeyCode.Z)) {
+			this.transform.Translate (Vector3.up * Time.deltaTime, Space.World);
 		}
 
-		if (Input.GetKeyDown (KeyCode.S)) {
-			this.transform.Translate (-Vector3.up);
+		if (Input.GetKey (KeyCode.S)) {
+			this.transform.Translate (-Vector3.up * Time.deltaTime, Space.World);
 		}
 
-		if (Input.GetKeyDown (KeyCode.D)) {
-			this.transform.Translate (Vector3.right);
+		if (Input.GetKey (KeyCode.D)) {
+			this.transform.Translate (Vector3.right * Time.deltaTime, Space.World);
 		}
 
-		if (Input.GetKeyDown (KeyCode.Q)) {
-			this.transform.Translate (-Vector3.right);
+		if (Input.GetKey (KeyCode.Q)) {
+			this.transform.Translate (-Vector3.right * Time.deltaTime, Space.World);
 		}
 	}
 }
