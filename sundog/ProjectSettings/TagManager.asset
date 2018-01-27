@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - shield
+  - explosion
+  - dog
+  - monster
   layers:
   - Default
   - TransparentFX
