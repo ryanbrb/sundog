@@ -101,15 +101,17 @@ public class SoundProjector : MonoBehaviour {
             {
                
                
-                    Debug.Log("In Angle and Should Reflect!");
+                   
                     RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, direction);
 
                     foreach (RaycastHit2D hit in hits)
                     {
 
-                        if (hit.collider == result && temp.ShouldReflect(this))
+                        if (hit.collider == result)
                         {
-                            Debug.DrawLine(transform.position, hit.point, Color.cyan, 10);
+                            if(temp.ShouldReflect(this))
+                                Debug.DrawLine(transform.position, hit.point, Color.cyan, 10);
+
                             break;
                         }
                         else

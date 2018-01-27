@@ -105,6 +105,7 @@ public class EchoSystem : MonoBehaviour
 		{
 			if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.stomp) { // STOMP
                 scaleEcho = 0;
+                echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, 360, 0);
                 SendSignal(SoundProjector.ProjectorType.stomp,360, Vector2.up);
 
                 return;
@@ -113,12 +114,15 @@ public class EchoSystem : MonoBehaviour
                 scaleEcho = Vector2.Distance(posMouseBeforeScale, pos);
 
                 float arc = 360-((scaleEcho / 6)*360);
+
 				if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.whistle) {
 
+                    echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, arc, SoundProjector.GetFullAngle(orientationEcho));
                     SendSignal(SoundProjector.ProjectorType.whistle, arc, orientationEcho);
 
                 } else if(echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.click)
-                { 
+                {
+                    echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, arc, SoundProjector.GetFullAngle(orientationEcho));
                     SendSignal(SoundProjector.ProjectorType.click, arc, orientationEcho);
                 }
 
@@ -149,5 +153,7 @@ public class EchoSystem : MonoBehaviour
 
         SoundProjector proj = temp.AddComponent<SoundProjector>();
         proj.Project(type,angle,arc);
+
+
     }
 }
