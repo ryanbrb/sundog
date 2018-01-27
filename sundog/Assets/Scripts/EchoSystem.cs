@@ -103,7 +103,6 @@ public class EchoSystem : MonoBehaviour
 		if(Input.GetMouseButtonUp(1))
 		{
 			if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.stomp) { // STOMP
-                // send STOMP signals
                 SendSignal(SoundProjector.ProjectorType.stomp,360, Vector2.up);
 
                 return;
@@ -111,11 +110,11 @@ public class EchoSystem : MonoBehaviour
 				scaleEcho = Vector2.Dot(posMouseBeforeScale, Input.mousePosition);
 				if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.whistle) {
 
-                    SendSignal(SoundProjector.ProjectorType.whistle, 360, orientationEcho);
+                    SendSignal(SoundProjector.ProjectorType.whistle, 60, orientationEcho);
 
                 } else if(echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.click)
                 { 
-                    SendSignal(SoundProjector.ProjectorType.click, 360, orientationEcho);
+                    SendSignal(SoundProjector.ProjectorType.click, 60, orientationEcho);
                 }
 
 			}
@@ -148,7 +147,7 @@ public class EchoSystem : MonoBehaviour
     public void SendSignal(SoundProjector.ProjectorType type, float arc, Vector2 direction)
     {
 
-        float angle = (direction.x > 0)? Vector2.Angle(Vector2.up,direction) :  360 - Vector2.Angle(Vector2.up, direction) ;
+        float angle = SoundProjector.GetFullAngle(direction);
        
         Debug.Log(angle);
         GameObject temp = new GameObject();

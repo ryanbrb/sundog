@@ -16,13 +16,13 @@ public class SoundProjector : MonoBehaviour {
     }
 
     //settings
-    public float InitialIntensity = 10;
+    public float InitialIntensity = 1;
     public float IntensityFallOff = 0.1f; // todo none-linear;
-    public float ProjectionRate = 1;
+    public float ProjectionRate = 2;
     public float MaxRadius = 10;
     public ProjectorType myType;
 
-    public float myAngle;
+    public float myAngle = 0;
     public float myArc;
 
     //book keeping
@@ -37,7 +37,7 @@ public class SoundProjector : MonoBehaviour {
 
     public void ProjectCircle(Vector2 input)
     {
-        CircleRadius = Mathf.Lerp(CircleRadius, CircleTargetRadius, Time.deltaTime);
+        CircleRadius = Mathf.Lerp(CircleRadius, CircleTargetRadius, Time.deltaTime* ProjectionRate);
         Collider2D[] results = Physics2D.OverlapCircleAll(input, CircleRadius);
         foreach (Collider2D result in results)
         {
@@ -72,10 +72,23 @@ public class SoundProjector : MonoBehaviour {
             return;
         }
 
-        Intensity -= IntensityFallOff*Time.deltaTime; // TODO should not be linear;
+        Intensity -= IntensityFallOff*Time.deltaTime*ProjectionRate; // TODO should not be linear;
         ProjectCircle(transform.position);
     }
+    
+    public static float GetFullAngle(Vector2 direction)
+    {
+       return (direction.x > 0) ? Vector2.Angle(Vector2.up, direction) : 360 - Vector2.Angle(Vector2.up, direction);
+    }
 
+    public static bool IsAngleBetweenArc(float angleA, float arc, float angleB)
+    {
+        float diffAngle = Mathf.Abs(angleA - angleB);
+
+        float halfArc = arc / 2;
+
+        return diffAngle <= halfArc;
+    }
 
     public void CheckObject(Collider2D result)
     {
@@ -84,23 +97,25 @@ public class SoundProjector : MonoBehaviour {
         if (temp != null)
         {
             Vector3 direction = result.transform.position - this.transform.position;
-            RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, direction);
 
-            foreach (RaycastHit2D hit in hits)
+            if (IsAngleBetweenArc(GetFullAngle(direction), myArc, myAngle))
             {
-                if (hit.collider == result && temp.ShouldReflect(this))
-                {
-                    Debug.DrawRay(transform.position, direction, Color.cyan, 1);
-                    break;
-                }
-                else
-                {
 
-                    Debug.DrawRay(transform.position, direction, Color.red, 1);
-                    break;
+                RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, direction);
+
+                foreach (RaycastHit2D hit in hits)
+                {
+                    if (hit.collider == result && temp.ShouldReflect(this))
+                    {
+                        Debug.DrawRay(transform.position, direction, Color.cyan, 1);
+                        break;
+                    }
+                    else
+                    {
+                        break;
+                    }
                 }
             }
-
 
         }
     }
