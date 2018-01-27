@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 114536018927979672}
   - component: {fileID: 82659987408254962}
   - component: {fileID: 114120349540916504}
+  - component: {fileID: 58759172700558642}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -735,6 +736,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1357362030243672}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!58 &58759172700558642
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1437106059189570}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!82 &82432039873091180
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1094,7 +1110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b6ff38e4bac04f469e7ed7b91204227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 2
+  index: 5
   radius: 0
   height: 0
   particleSystem: {fileID: 198180867202591188}
@@ -1109,7 +1125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b6ff38e4bac04f469e7ed7b91204227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
+  index: 4
   radius: 0
   height: 0
   particleSystem: {fileID: 0}
@@ -1124,6 +1140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e593fb8f777044c96603aa7fd9fa89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
 --- !u!114 &114784408370857602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1135,7 +1152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b6ff38e4bac04f469e7ed7b91204227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 1
+  index: 3
   radius: 0
   height: 0
   particleSystem: {fileID: 198129136836558850}
