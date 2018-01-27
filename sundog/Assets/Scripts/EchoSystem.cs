@@ -83,7 +83,8 @@ public class EchoSystem : MonoBehaviour
 		{
 			posMouseBeforeScale = Vector2.zero;
 
-			if (echoList [i].GetComponent<Echo>().index == 2) { // STOMP
+			if (echoList [i].GetComponent<Echo>().index == SoundProjector.ProjectorType.stomp) { 
+
 				return;
 			} else {
 				//orientation
@@ -99,21 +100,23 @@ public class EchoSystem : MonoBehaviour
 
 		if(Input.GetMouseButtonUp(1))
 		{
-			if (echoList [i].GetComponent<Echo>().index == 2) { // STOMP
-				// send STOMP signals
+			if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.stomp) { // STOMP
+                // send STOMP signals
+                SendSignal(SoundProjector.ProjectorType.stomp,360,0);
 
-				return;
+                return;
 			} else {
 				scaleEcho = Vector2.Dot(posMouseBeforeScale, Input.mousePosition);
-				if (echoList [i].GetComponent<Echo> ().index == 0) { // WRISTLE
+				if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.whistle) { // WRISTLE
 					// send STOMP signals
-				} else if(echoList [i].GetComponent<Echo>().index == 1){ // CLICK
+				} else if(echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.click)
+                { // CLICK
 					// send STOMP signals
 				}
 
 			}
 
-		}	
+		}
 
 
 //		Vector3 vectorArrowUp = this.transform.up;
@@ -137,4 +140,15 @@ public class EchoSystem : MonoBehaviour
 
  
 	}
+
+    public void SendSignal(SoundProjector.ProjectorType type, float arc, float angle)
+    {
+        GameObject temp = new GameObject();
+
+        temp.transform.position = this.transform.position;
+        temp.transform.rotation = this.transform.rotation;
+
+        SoundProjector proj = temp.AddComponent<SoundProjector>();
+        proj.Project(type,angle,arc);
+    }
 }

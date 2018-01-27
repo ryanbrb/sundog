@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Echo : MonoBehaviour {
 
-	public int index; // 1 : WRRSTLE, 2 : CLICK, 3 : STOMP
+	public SoundProjector.ProjectorType index; 
 	Sprite Icon;
 	public float radius;
 	public float height;

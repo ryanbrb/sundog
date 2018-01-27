@@ -6,12 +6,13 @@ public class SoundProjector : MonoBehaviour {
 
     public enum ProjectorType
     {
-        basic
-    }
-
-    public enum ProjectorShape
-    {
-        circle
+        none,
+        basic,
+        bark,
+        whistle,
+        stomp,
+        click,
+        monster
     }
 
     //settings
@@ -19,13 +20,13 @@ public class SoundProjector : MonoBehaviour {
     public float IntensityFallOff = 0.1f; // todo none-linear;
     public float ProjectionRate = 1;
     public float MaxRadius = 10;
-
-    public ProjectorShape myShape;
     public ProjectorType myType;
 
+    public float myAngle;
+    public float myArc;
 
     //book keeping
-    public float Intensity = 1;
+    float Intensity = 1;
     float CircleTargetRadius;
     float CircleRadius = 0;
 
@@ -46,11 +47,16 @@ public class SoundProjector : MonoBehaviour {
 
     }
 
-    public void Project()
+    public void Project(ProjectorType type = ProjectorType.none, float angle = -1, float arc = -1, float intensity = -1, float falloff = -1, float speed = -1, float maxDistance = -1)
     {
-        CircleRadius = 0;
-        Intensity = InitialIntensity;
-        CircleTargetRadius = MaxRadius;
+        CircleRadius =  0;
+        Intensity = (intensity < 0)? InitialIntensity : intensity;
+        IntensityFallOff = (falloff < 0) ? IntensityFallOff : falloff;
+        ProjectionRate = (speed < 0) ? ProjectionRate : speed;
+        CircleTargetRadius = (maxDistance < 0)? MaxRadius : maxDistance;
+        myType = (type == ProjectorType.none) ? myType : type;
+        myAngle = (angle < 0) ? myAngle : angle;
+        myArc = (arc < 0) ? myArc : arc;
     }
 
     void Update()

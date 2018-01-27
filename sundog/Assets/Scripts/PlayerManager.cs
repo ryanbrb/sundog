@@ -18,7 +18,6 @@ public class PlayerManager : MonoBehaviour
 	{
 		NOTHING,
 		WALK,
-
 		WRISTLE,
 		CLICK,
 		STOMP}
