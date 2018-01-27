@@ -15,12 +15,18 @@ public class Reflector : MonoBehaviour {
 
     List<SoundProjector> collidedSounds;
 
+    public GameObject effect;
+
     public ReflectorType type = ReflectorType.basic;
     public float minimumIntensity = 0.3f;
 
     private void Start()
     {
         collidedSounds = new List<SoundProjector>();
+        MeshRenderer visible = GetComponent<MeshRenderer>();
+
+        if (visible != null)
+            visible.enabled = false;
         StartCoroutine(Forever());
     }
     public bool ShouldReflect(SoundProjector input)
@@ -28,14 +34,19 @@ public class Reflector : MonoBehaviour {
         if (!collidedSounds.Contains(input))
         {
             collidedSounds.Add(input);
+            if(input.GetIntensity() > minimumIntensity)
+            {
+                GameObject temp = Instantiate(effect);
 
+                temp.transform.position = this.transform.position;
+                temp.transform.rotation = this.transform.rotation;
 
-            return input.GetIntensity() > minimumIntensity;
+                return true;
+            }
         }
-        else
-        {
+       
             return false;
-        }
+        
     }
 
     IEnumerator Forever()

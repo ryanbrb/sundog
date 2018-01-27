@@ -15,10 +15,10 @@ public class SoundProjector : MonoBehaviour {
     }
 
     //settings
-    public float InitialIntensity = 1;
+    public float InitialIntensity = 10;
     public float IntensityFallOff = 0.1f; // todo none-linear;
     public float ProjectionRate = 1;
-    public float MaxRadius = 5;
+    public float MaxRadius = 10;
 
     public ProjectorShape myShape;
     public ProjectorType myType;
