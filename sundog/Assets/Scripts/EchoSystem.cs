@@ -126,13 +126,14 @@ public class EchoSystem : MonoBehaviour
 
 		}
 
+        if (!Input.GetMouseButton(1))
+        {
+            float rawAngle;
+            Vector3 screenPos = Camera.main.WorldToScreenPoint(this.gameObject.transform.position);
+            rawAngle = Mathf.Atan2(Input.mousePosition.y - screenPos.y, Input.mousePosition.x - screenPos.x) * Mathf.Rad2Deg;
 
-			float rawAngle;
-		Vector3 screenPos = Camera.main.WorldToScreenPoint(this.gameObject.transform.position);
-		rawAngle = Mathf.Atan2 (Input.mousePosition.y - screenPos.y, Input.mousePosition.x - screenPos.x)* Mathf.Rad2Deg;
-
-			arrow.transform.rotation = Quaternion.Euler(0, 0, rawAngle + 270);
-
+            arrow.transform.rotation = Quaternion.Euler(0, 0, rawAngle + 270);
+        }
  
 	}
 

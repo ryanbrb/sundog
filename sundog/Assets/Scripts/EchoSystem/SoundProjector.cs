@@ -41,7 +41,6 @@ public class SoundProjector : MonoBehaviour {
         Collider2D[] results = Physics2D.OverlapCircleAll(input, CircleRadius);
         foreach (Collider2D result in results)
         {
-
             CheckObject(result);
         }
 
@@ -89,35 +88,52 @@ public class SoundProjector : MonoBehaviour {
 
         return diffAngle <= halfArc;
     }
-
     public void CheckObject(Collider2D result)
     {
 
         Reflector temp = result.gameObject.GetComponent<Reflector>();
         if (temp != null)
         {
+        
             Vector3 direction = result.transform.position - this.transform.position;
 
-            if (IsAngleBetweenArc(GetFullAngle(direction), myArc, myAngle))
+            if(IsAngleBetweenArc(GetFullAngle(direction), myArc, myAngle))
             {
+               
+               
+                    Debug.Log("In Angle and Should Reflect!");
+                    RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, direction);
 
-                RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, direction);
+                    foreach (RaycastHit2D hit in hits)
+                    {
 
-                foreach (RaycastHit2D hit in hits)
-                {
-                    if (hit.collider == result && temp.ShouldReflect(this))
-                    {
-                        Debug.DrawRay(transform.position, direction, Color.cyan, 1);
-                        break;
+                        if (hit.collider == result && temp.ShouldReflect(this))
+                        {
+                            Debug.DrawLine(transform.position, hit.point, Color.cyan, 10);
+                            break;
+                        }
+                        else
+                        {
+                            PlayerManager player = hit.collider.GetComponent<PlayerManager>();
+                            if (player == null)
+                            {
+                                Debug.DrawLine(transform.position, hit.point, Color.red, 10);
+                                break;
+                            }
+                        }
                     }
-                    else
-                    {
-                        break;
-                    }
-                }
+                
             }
 
         }
+    }
+
+    void OnDrawGizmos()
+    {
+        Color linecolor = Color.white;
+        linecolor.a = Intensity;
+        Gizmos.color = linecolor;
+        Gizmos.DrawWireSphere(transform.position, CircleRadius);
     }
 
 }

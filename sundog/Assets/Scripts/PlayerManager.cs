@@ -30,10 +30,29 @@ public class PlayerManager : MonoBehaviour
 	AudioSource audio;
 	List<AudioClip> audioList;
 
+    Rigidbody2D rb;
+
+    Collider2D col;
+
+    public float speed;
 	// Use this for initialization
 	void Start ()
 	{
 		audio = GetComponent<AudioSource> ();
+        rb = GetComponent<Rigidbody2D>();
+
+        if(rb == null)
+        {
+            rb = gameObject.AddComponent<Rigidbody2D>();
+            rb.gravityScale = 0;
+        }
+
+        col =  GetComponent<Collider2D>();
+        if(col)
+        {
+            col = gameObject.AddComponent<CircleCollider2D>();
+        }
+
 	}
 
 	public void SetState (State newState)
@@ -79,7 +98,16 @@ public class PlayerManager : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		//player moving around
+        //player moving around
+        float Hoz = Input.GetAxis("Horizontal") ;
+
+        float Vert = Input.GetAxis("Vertical") ;
+
+        Vector2 newPosition = transform.position + (new Vector3(Hoz, Vert) * Time.deltaTime);
+
+        rb.MovePosition(newPosition);
+
+        /*
 		if (Input.GetKey (KeyCode.Z)) {
 			this.transform.Translate (Vector3.up * Time.deltaTime, Space.World);
 		}
@@ -95,5 +123,6 @@ public class PlayerManager : MonoBehaviour
 		if (Input.GetKey (KeyCode.Q)) {
 			this.transform.Translate (-Vector3.right * Time.deltaTime, Space.World);
 		}
+        */
 	}
 }

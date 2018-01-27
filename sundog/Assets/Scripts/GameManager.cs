@@ -14,7 +14,10 @@ public class GameManager : MonoBehaviour {
 
 	GameEvent ge = GameEvent.ENTER;
 
-	public GameObject Player;
+	public PlayerManager Player;
+
+    public List<DogManager> Dogs;
+    public List<MonsterManager> Monsters;
 
 	AudioSource AmbientAudio;
 	public AudioSource PlayerAudio;
@@ -26,6 +29,37 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		AmbientAudio = GetComponent<AudioSource> ();
+
+        if (Player == null)
+            Player = FindObjectOfType<PlayerManager>();
+
+        if(Dogs == null)
+        {
+            Dogs = new List<DogManager>();
+        }
+
+        DogManager[] dogsfound = GameObject.FindObjectsOfType<DogManager>();
+
+        foreach(DogManager dog in dogsfound)
+        {
+            if (!Dogs.Contains(dog))
+                Dogs.Add(dog);
+        }
+
+        if(Monsters == null)
+        {
+            Monsters = new List<MonsterManager>();
+        }
+
+        MonsterManager[] monstersfound = GameObject.FindObjectsOfType<MonsterManager>();
+
+        foreach(MonsterManager monster in monstersfound)
+        {
+            if(!Monsters.Contains(monster))
+            {
+                Monsters.Add(monster);
+            }
+        }
 	}
 
 	void SwitchGameEvent(GameEvent newGE)

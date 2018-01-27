@@ -13,7 +13,7 @@ public class Reflector : MonoBehaviour {
 
     public float timeout;
 
-    List<SoundProjector> collidedSounds;
+    public List<SoundProjector> collidedSounds;
 
     public GameObject effect;
 
@@ -34,7 +34,7 @@ public class Reflector : MonoBehaviour {
         if (!collidedSounds.Contains(input))
         {
             collidedSounds.Add(input);
-            if(input.GetIntensity() > minimumIntensity)
+            if (input.GetIntensity() > minimumIntensity)
             {
                 GameObject temp = Instantiate(effect);
 
@@ -43,10 +43,13 @@ public class Reflector : MonoBehaviour {
 
                 return true;
             }
+           
+           
         }
-       
-            return false;
+
         
+        return false;
+
     }
 
     IEnumerator Forever()
