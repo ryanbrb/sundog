@@ -1113,7 +1113,8 @@ MonoBehaviour:
   index: 5
   radius: 0
   height: 0
-  particleSystem: {fileID: 198180867202591188}
+  particleSystem: {fileID: 1264455181868106, guid: a4c171ff155f3a641964058cda0c2b1b,
+    type: 2}
 --- !u!114 &114380277579905296
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1128,7 +1129,8 @@ MonoBehaviour:
   index: 4
   radius: 0
   height: 0
-  particleSystem: {fileID: 0}
+  particleSystem: {fileID: 1264455181868106, guid: a4c171ff155f3a641964058cda0c2b1b,
+    type: 2}
 --- !u!114 &114536018927979672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1155,7 +1157,8 @@ MonoBehaviour:
   index: 3
   radius: 0
   height: 0
-  particleSystem: {fileID: 198129136836558850}
+  particleSystem: {fileID: 1264455181868106, guid: a4c171ff155f3a641964058cda0c2b1b,
+    type: 2}
 --- !u!198 &198129136836558850
 ParticleSystem:
   m_ObjectHideFlags: 1
