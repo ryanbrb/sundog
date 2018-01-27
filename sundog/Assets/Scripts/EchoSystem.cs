@@ -88,7 +88,9 @@ public class EchoSystem : MonoBehaviour
 				return;
 			} else {
 				//orientation
-				orientationEcho = this.transform.up;
+                Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+                orientationEcho = pos - this.transform.position;
 			//do scaling
 				posMouseBeforeScale = Input.mousePosition;
 			}
@@ -102,17 +104,19 @@ public class EchoSystem : MonoBehaviour
 		{
 			if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.stomp) { // STOMP
                 // send STOMP signals
-                SendSignal(SoundProjector.ProjectorType.stomp,360,0);
+                SendSignal(SoundProjector.ProjectorType.stomp,360, Vector2.up);
 
                 return;
 			} else {
 				scaleEcho = Vector2.Dot(posMouseBeforeScale, Input.mousePosition);
-				if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.whistle) { // WRISTLE
-					// send STOMP signals
-				} else if(echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.click)
-                { // CLICK
-					// send STOMP signals
-				}
+				if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.whistle) {
+
+                    SendSignal(SoundProjector.ProjectorType.whistle, 360, orientationEcho);
+
+                } else if(echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.click)
+                { 
+                    SendSignal(SoundProjector.ProjectorType.click, 360, orientationEcho);
+                }
 
 			}
 
@@ -141,8 +145,12 @@ public class EchoSystem : MonoBehaviour
  
 	}
 
-    public void SendSignal(SoundProjector.ProjectorType type, float arc, float angle)
+    public void SendSignal(SoundProjector.ProjectorType type, float arc, Vector2 direction)
     {
+
+        float angle = (direction.x > 0)? Vector2.Angle(Vector2.up,direction) :  360 - Vector2.Angle(Vector2.up, direction) ;
+       
+        Debug.Log(angle);
         GameObject temp = new GameObject();
 
         temp.transform.position = this.transform.position;
