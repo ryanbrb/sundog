@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1308692105905434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6848993, y: 0.4694972, z: 1.5306726}
+  m_LocalPosition: {x: 21.662807, y: 22.168972, z: 1.5306726}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -54,8 +54,7 @@ MonoBehaviour:
   shortMaximumXThreshold: 5
   mediumMaximumXThreshold: 10
   longMaximumXThreshold: 20
-  shortClickPrefab: {fileID: 1264455181868106, guid: c9530945d10d52d498fe3eb75931b5c1,
-    type: 2}
+  shortClickPrefab: {fileID: 0}
   mediumClickPrefab: {fileID: 1264455181868106, guid: 0e221f970f797c347adc8d56fa57239f,
     type: 2}
   longClickPrefab: {fileID: 1264455181868106, guid: c32f5fd742592ab4eb2393d46828d58d,
@@ -86,7 +85,11 @@ MonoBehaviour:
     type: 2}
   extraLongBarkPrefab: {fileID: 1264455181868106, guid: 3391ecc1cb217224091a7e545a2beba8,
     type: 2}
-  shortMonsterPrefab: {fileID: 0}
-  mediumMonsterPrefab: {fileID: 0}
-  longMonsterPrefab: {fileID: 0}
-  extraLongMonsterPrefab: {fileID: 0}
+  shortMonsterPrefab: {fileID: 1264455181868106, guid: a3139d25ec89a5749ad188875a4da66f,
+    type: 2}
+  mediumMonsterPrefab: {fileID: 1264455181868106, guid: b0b62159ab0180a45b6058e5667aa6c9,
+    type: 2}
+  longMonsterPrefab: {fileID: 1264455181868106, guid: 65b4c2410353dd3459179ced0b0a872b,
+    type: 2}
+  extraLongMonsterPrefab: {fileID: 1264455181868106, guid: e6f2409d6e421894fb22fd7342361289,
+    type: 2}
