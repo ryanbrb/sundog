@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4742386409518498}
   - component: {fileID: 212378573440087636}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dog2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114649949670971796}
   - component: {fileID: 58141497871509790}
   - component: {fileID: 114685671301805682}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dog 1
   m_TagString: dog
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 5
-  m_Speed: 0.5
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

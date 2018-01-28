@@ -6,21 +6,25 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-  //General States for the whole game
-  enum GameState 
-  {
-    GS_GAMEPLAY,
+	//General States for the whole game
+	enum GameState
+	{
+		GS_GAMEPLAY,
 
-    GS_ENTER_DEATH,         //this fades into the deat
-    GS_DEATH,               //black screen
-    GS_RESPAWN_FROM_DEATH,  //fade back to game
+		GS_ENTER_DEATH,
+		//this fades into the deat
+		GS_DEATH,
+		//black screen
+		GS_RESPAWN_FROM_DEATH,
+		//fade back to game
 
-    GS_ENTER_VICTORY,
-    GS_VICTORY,
-    GS_VICTORY_EXIT,        //but where do we go after victory?
-  };
+		GS_ENTER_VICTORY,
+		GS_VICTORY,
+		GS_VICTORY_EXIT,
+		//but where do we go after victory?
+	};
 
-  enum GameEvent
+	enum GameEvent
 	{
 		NOTHING,
 		ATTACK,
@@ -31,23 +35,23 @@ public class GameManager : MonoBehaviour
 	GameEvent ge = GameEvent.NOTHING;
 	GameState gs = GameState.GS_GAMEPLAY;
 
-  //UI related
-  public Canvas DeathStateCanvas;
-  public Canvas VictoryStateCanvas;
+	//UI related
+	public Canvas DeathStateCanvas;
+	public Canvas VictoryStateCanvas;
 
-  public float fadeToBlackTime = 0.25f;
-  public float deathIdleTime = 2.0f;
-  public float fadeToRespawnFromDeath = 0.25f;
+	public float fadeToBlackTime = 0.25f;
+	public float deathIdleTime = 2.0f;
+	public float fadeToRespawnFromDeath = 0.25f;
 
-  public float fadeToWhiteTime = 1.0f;
-  public float victoryIdleTime = 7.0f;
-  public float secondsPerVictoryMessageCharacter = 0.15f;
-  string victoryMessage = "You've made it out!";
+	public float fadeToWhiteTime = 1.0f;
+	public float victoryIdleTime = 7.0f;
+	public float secondsPerVictoryMessageCharacter = 0.15f;
+	string victoryMessage = "You've made it out!";
 
-  float m_fStateTimer;
-  int m_iStateIndex;
+	float m_fStateTimer;
+	int m_iStateIndex;
 
-  public GameObject Player;
+	public GameObject Player;
 
 	public List<DogManager> Dogs;
 	public List<MonsterManager> Monsters;
@@ -107,38 +111,37 @@ public class GameManager : MonoBehaviour
 		SpawnAllDogs (bDestroyOldInstances);
 		SpawnAllMonsters (bDestroyOldInstances);
 
-    ClearDeathScreen();
-    ClearVictoryScreen();
+		ClearDeathScreen ();
+		ClearVictoryScreen ();
 	}
 
-  void DestroyAllNonPlayers() 
-  {
-    //delete all of the existing monsters if there are any
-    int numberOfActiveMonsters = Monsters.Count;
-    for (int i = numberOfActiveMonsters - 1; i >= 0; --i) {
-      Destroy(Monsters[i].gameObject);
-    }
-    Monsters.Clear();
+	void DestroyAllNonPlayers ()
+	{
+		//delete all of the existing monsters if there are any
+		int numberOfActiveMonsters = Monsters.Count;
+		for (int i = numberOfActiveMonsters - 1; i >= 0; --i) {
+			Destroy (Monsters [i].gameObject);
+		}
+		Monsters.Clear ();
 
-    //delete all of the existing monsters if there are any
-    int numberOfActiveDogs = Dogs.Count;
-    for (int i = numberOfActiveDogs - 1; i >= 0; --i) {
-      Destroy(Dogs[i].gameObject);
-    }
-    Dogs.Clear();
-  }
+		//delete all of the existing monsters if there are any
+		int numberOfActiveDogs = Dogs.Count;
+		for (int i = numberOfActiveDogs - 1; i >= 0; --i) {
+			Destroy (Dogs [i].gameObject);
+		}
+		Dogs.Clear ();
+	}
 
 	void SpawnPlayer ()
 	{
-    //Destroy old player first if they exist
-    PlayerManager[] playerManagers = GameObject.FindObjectsOfType<PlayerManager>();
-    int numberOfPlayersInLevel = playerManagers.Length;
-    for(int i = numberOfPlayersInLevel - 1; i >= 0; --i) 
-    {
-      Destroy(playerManagers[i].gameObject);
-    }
+		//Destroy old player first if they exist
+		PlayerManager[] playerManagers = GameObject.FindObjectsOfType<PlayerManager> ();
+		int numberOfPlayersInLevel = playerManagers.Length;
+		for (int i = numberOfPlayersInLevel - 1; i >= 0; --i) {
+			Destroy (playerManagers [i].gameObject);
+		}
 
-    GameObject _player = Instantiate (Player, Vector2.zero, Quaternion.identity);
+		GameObject _player = Instantiate (Player, Vector2.zero, Quaternion.identity);
 	}
 
 	//this will delete all existing dogs
@@ -166,12 +169,10 @@ public class GameManager : MonoBehaviour
 
 		//spawn monsters at all spawn locations
 		for (int i = 0; i < numberOfSpawnLocations; ++i) {
-			if(i < 2)
-			{
+			if (i < 2) {
 				GameObject dogGameObject = Instantiate (DogPrefab, DogSpawnPositions [i].position, DogSpawnPositions [i].rotation);
 				Dogs.Add (dogGameObject.GetComponent<DogManager> ());
-			}else
-			{
+			} else {
 				GameObject dogGameObject = Instantiate (DogPrefab2, DogSpawnPositions [i].position, DogSpawnPositions [i].rotation);
 				Dogs.Add (dogGameObject.GetComponent<DogManager> ());
 			}
@@ -203,309 +204,278 @@ public class GameManager : MonoBehaviour
 
 		//spawn monsters at all spawn locations
 		for (int i = 0; i < numberOfSpawnLocations; ++i) {
-			if(i < (numberOfSpawnLocations / 2))
-			{
+			if (i < (numberOfSpawnLocations / 2)) {
 				GameObject monsterGameObject = Instantiate (MonsterPrefab, MonsterSpawnPositions [i].position, MonsterSpawnPositions [i].rotation);
 				Monsters.Add (monsterGameObject.GetComponent<MonsterManager> ());
-			}
-			else{
+			} else {
 				GameObject monsterGameObject = Instantiate (MonsterPrefab2, MonsterSpawnPositions [i].position, MonsterSpawnPositions [i].rotation);
 				Monsters.Add (monsterGameObject.GetComponent<MonsterManager> ());
 			}
 		}
 	}
 
-  void ClearDeathScreen(bool bEnableRendering = false) 
-  {
-    if (DeathStateCanvas == null)
-      return;
+	void ClearDeathScreen (bool bEnableRendering = false)
+	{
+		if (DeathStateCanvas == null)
+			return;
 
-    CanvasGroup canvasGroupComponent = DeathStateCanvas.GetComponent<CanvasGroup>();
-    if (canvasGroupComponent != null) 
-    {
-      canvasGroupComponent.alpha = 0.0f;
-    }
+		CanvasGroup canvasGroupComponent = DeathStateCanvas.GetComponent<CanvasGroup> ();
+		if (canvasGroupComponent != null) {
+			canvasGroupComponent.alpha = 0.0f;
+		}
 
-    DeathStateCanvas.enabled = bEnableRendering;
-  }
+		DeathStateCanvas.enabled = bEnableRendering;
+	}
 
-  void SetDeathScreenAlphaFade(float newAlpha) 
-  {
-    if (DeathStateCanvas == null)
-      return;
+	void SetDeathScreenAlphaFade (float newAlpha)
+	{
+		if (DeathStateCanvas == null)
+			return;
 
-    CanvasGroup canvasGroupComponent = DeathStateCanvas.GetComponent<CanvasGroup>();
-    if (canvasGroupComponent != null) 
-    {
-      canvasGroupComponent.alpha = newAlpha;
-    }
-  }
+		CanvasGroup canvasGroupComponent = DeathStateCanvas.GetComponent<CanvasGroup> ();
+		if (canvasGroupComponent != null) {
+			canvasGroupComponent.alpha = newAlpha;
+		}
+	}
 
-  void ClearVictoryScreen(bool bEnableRendering = false) {
-    if (VictoryStateCanvas == null)
-      return;
+	void ClearVictoryScreen (bool bEnableRendering = false)
+	{
+		if (VictoryStateCanvas == null)
+			return;
 
-    CanvasGroup canvasGroupComponent = VictoryStateCanvas.GetComponent<CanvasGroup>();
-    if (canvasGroupComponent != null) {
-      canvasGroupComponent.alpha = 0.0f;
-    }
+		CanvasGroup canvasGroupComponent = VictoryStateCanvas.GetComponent<CanvasGroup> ();
+		if (canvasGroupComponent != null) {
+			canvasGroupComponent.alpha = 0.0f;
+		}
 
-    VictoryStateCanvas.enabled = bEnableRendering;
-  }
+		VictoryStateCanvas.enabled = bEnableRendering;
+	}
 
-  void SetVictoryScreenAlphaFade(float newAlpha) {
-    if (VictoryStateCanvas == null)
-      return;
+	void SetVictoryScreenAlphaFade (float newAlpha)
+	{
+		if (VictoryStateCanvas == null)
+			return;
 
-    CanvasGroup canvasGroupComponent = VictoryStateCanvas.GetComponent<CanvasGroup>();
-    if (canvasGroupComponent != null) {
-      canvasGroupComponent.alpha = newAlpha;
-    }
-  }
+		CanvasGroup canvasGroupComponent = VictoryStateCanvas.GetComponent<CanvasGroup> ();
+		if (canvasGroupComponent != null) {
+			canvasGroupComponent.alpha = newAlpha;
+		}
+	}
 
-  void SetVictoryText(string newText) 
-  {
-    if (VictoryStateCanvas == null)
-      return;
+	void SetVictoryText (string newText)
+	{
+		if (VictoryStateCanvas == null)
+			return;
 
-    Transform imageTransform = VictoryStateCanvas.transform.Find("Image");
-    if (imageTransform == null)
-      return;
+		Transform imageTransform = VictoryStateCanvas.transform.Find ("Image");
+		if (imageTransform == null)
+			return;
 
-    Transform textTransform = imageTransform.Find("Text");
-    if (textTransform == null)
-      return;
+		Transform textTransform = imageTransform.Find ("Text");
+		if (textTransform == null)
+			return;
 
-    Text UI_text = textTransform.gameObject.GetComponent<Text>();
-    if (UI_text == null)
-      return;
+		Text UI_text = textTransform.gameObject.GetComponent<Text> ();
+		if (UI_text == null)
+			return;
 
-    UI_text.text = newText;
-  }
+		UI_text.text = newText;
+	}
 
-  void SwitchGameState(GameState newState) {
-    switch (newState) {
-      case GameState.GS_GAMEPLAY: 
-      {
-        //reset gameplay
-        ClearDeathScreen(false);
-        ClearVictoryScreen(false);
-        SpawnAllMonsters(true);          
-      }
-      break;
+	void SwitchGameState (GameState newState)
+	{
+		switch (newState) {
+		case GameState.GS_GAMEPLAY: 
+			{
+				//reset gameplay
+				ClearDeathScreen (false);
+				ClearVictoryScreen (false);
+				SpawnAllMonsters (true);          
+			}
+			break;
 
-      case GameState.GS_ENTER_DEATH: 
-      {
-        m_fStateTimer = fadeToBlackTime;
-        ClearDeathScreen(true);
-      }
-      break;
+		case GameState.GS_ENTER_DEATH: 
+			{
+				m_fStateTimer = fadeToBlackTime;
+				ClearDeathScreen (true);
+			}
+			break;
 
-      case GameState.GS_DEATH: 
-      {
-        //here we should spawn some kind of Screen fade effect.
-        m_fStateTimer = deathIdleTime;
+		case GameState.GS_DEATH: 
+			{
+				//here we should spawn some kind of Screen fade effect.
+				m_fStateTimer = deathIdleTime;
 
-        //it's okay to destroy everything else now since our full screen
-        //effect should be blocking our view from the level
-        DestroyAllNonPlayers();
-      }
-      break;
+				//it's okay to destroy everything else now since our full screen
+				//effect should be blocking our view from the level
+				DestroyAllNonPlayers ();
+			}
+			break;
 
-      case GameState.GS_RESPAWN_FROM_DEATH: 
-      {
-        //cleanup should happen here
-        m_fStateTimer = fadeToRespawnFromDeath;
-        InitGame(true);
+		case GameState.GS_RESPAWN_FROM_DEATH: 
+			{
+				//cleanup should happen here
+				m_fStateTimer = fadeToRespawnFromDeath;
+				InitGame (true);
         
-      }
-      break;
+			}
+			break;
 
-      case GameState.GS_ENTER_VICTORY: 
-      {
-          m_fStateTimer = fadeToWhiteTime;
-          ClearVictoryScreen(true);
-          //it would be great if we could pause all of the game here
-      }
-      break;
+		case GameState.GS_ENTER_VICTORY: 
+			{
+				m_fStateTimer = fadeToWhiteTime;
+				ClearVictoryScreen (true);
+				//it would be great if we could pause all of the game here
+			}
+			break;
 
-      case GameState.GS_VICTORY: 
-      {
-          m_fStateTimer = secondsPerVictoryMessageCharacter;
-          m_iStateIndex = -1;
-      }
-      break;
+		case GameState.GS_VICTORY: 
+			{
+				m_fStateTimer = secondsPerVictoryMessageCharacter;
+				m_iStateIndex = -1;
+			}
+			break;
 
-      case GameState.GS_VICTORY_EXIT: 
-      {
-          //we should load the title screen or the game again.
-      }
-      break;
-    }
+		case GameState.GS_VICTORY_EXIT: 
+			{
+				//we should load the title screen or the game again.
+			}
+			break;
+		}
 
-    gs = newState;
-  }
+		gs = newState;
+	}
 
-  void UpdateGameState() 
-  {
-    switch (gs) 
-    {
-      case GameState.GS_GAMEPLAY: 
-      {
-        bool bPlayerDied = false;
-        bool bFulfilledVictory = false;
+	void UpdateGameState ()
+	{
+		switch (gs) {
+		case GameState.GS_GAMEPLAY: 
+			{
+				bool bPlayerDied = false;
+				bool bFulfilledVictory = false;
 
-        //check to see if the player has died
-        PlayerManager[] playerManagers = GameObject.FindObjectsOfType<PlayerManager>();
-        if (playerManagers.Length > 0) 
-        {
-          PlayerManager playerManagerInstance = playerManagers[0].gameObject.GetComponent<PlayerManager>();
-          if(playerManagerInstance != null) 
-          {
-            bPlayerDied = playerManagerInstance.IsDead();
-            bFulfilledVictory = playerManagerInstance.HasReachedEndOfLevel();
-          }
-        }
+				//check to see if the player has died
+				PlayerManager[] playerManagers = GameObject.FindObjectsOfType<PlayerManager> ();
+				if (playerManagers.Length > 0) {
+					PlayerManager playerManagerInstance = playerManagers [0].gameObject.GetComponent<PlayerManager> ();
+					if (playerManagerInstance != null) {
+						bPlayerDied = playerManagerInstance.IsDead ();
+					}
+				}
 
-        if (bPlayerDied) 
-        {
-          SwitchGameState(GameState.GS_ENTER_DEATH);
-        }
+				if (bPlayerDied) {
+					SwitchGameState (GameState.GS_ENTER_DEATH);
+				}
 
-        //This could be separated out better, for edge cases.     
-        if(!bPlayerDied && bFulfilledVictory) 
-        {
-          SwitchGameState(GameState.GS_ENTER_VICTORY);
-        }
-      }
-      break;
+				//TODO: check to see if victory conditions have been fulfilled        
+				if (!bPlayerDied && bFulfilledVictory) {
+					SwitchGameState (GameState.GS_ENTER_VICTORY);
+				}
+			}
+			break;
 
-      case GameState.GS_ENTER_DEATH: 
-      {
-        m_fStateTimer -= Time.deltaTime;
-        if (m_fStateTimer <= 0.0f) 
-        {
-          SwitchGameState(GameState.GS_DEATH);
-        } 
-        else 
-        {
-          float newAlphaValue;
-          if (fadeToBlackTime <= 0.0f) 
-          {
-            newAlphaValue = 0.0f;
-          } 
-          else 
-          {
-            newAlphaValue = 1.0f - (m_fStateTimer / fadeToBlackTime);
-          }
+		case GameState.GS_ENTER_DEATH: 
+			{
+				m_fStateTimer -= Time.deltaTime;
+				if (m_fStateTimer <= 0.0f) {
+					SwitchGameState (GameState.GS_DEATH);
+				} else {
+					float newAlphaValue;
+					if (fadeToBlackTime <= 0.0f) {
+						newAlphaValue = 0.0f;
+					} else {
+						newAlphaValue = 1.0f - (m_fStateTimer / fadeToBlackTime);
+					}
 
-          SetDeathScreenAlphaFade(newAlphaValue);
-        }
-      }
-      break;
+					SetDeathScreenAlphaFade (newAlphaValue);
+				}
+			}
+			break;
 
-      case GameState.GS_DEATH: 
-      {
-        //check to see if death sequence is over
-        bool bDeathSequenceOver = false;
-        m_fStateTimer -= Time.deltaTime;
-        if (m_fStateTimer <= 0.0f)
-          bDeathSequenceOver = true;
+		case GameState.GS_DEATH: 
+			{
+				//check to see if death sequence is over
+				bool bDeathSequenceOver = false;
+				m_fStateTimer -= Time.deltaTime;
+				if (m_fStateTimer <= 0.0f)
+					bDeathSequenceOver = true;
 
-        if (bDeathSequenceOver) 
-        {
-          SwitchGameState(GameState.GS_RESPAWN_FROM_DEATH);
-        }
-      }
-      break;
+				if (bDeathSequenceOver) {
+					SwitchGameState (GameState.GS_RESPAWN_FROM_DEATH);
+				}
+			}
+			break;
 
-      case GameState.GS_RESPAWN_FROM_DEATH: 
-      {
-        //fade death screen back to game
-        m_fStateTimer -= Time.deltaTime;
-        if (m_fStateTimer <= 0.0f) 
-        {
-          SetDeathScreenAlphaFade(0.0f);
-          SwitchGameState(GameState.GS_GAMEPLAY);
-        } 
-        else 
-        {
-          float newAlphaValue;
-          if (fadeToRespawnFromDeath <= 0.0f) 
-          {
-            newAlphaValue = 0.0f;
-          } 
-          else 
-          {
-            newAlphaValue = (m_fStateTimer / fadeToRespawnFromDeath);
-          }
+		case GameState.GS_RESPAWN_FROM_DEATH: 
+			{
+				//fade death screen back to game
+				m_fStateTimer -= Time.deltaTime;
+				if (m_fStateTimer <= 0.0f) {
+					SetDeathScreenAlphaFade (0.0f);
+					SwitchGameState (GameState.GS_GAMEPLAY);
+				} else {
+					float newAlphaValue;
+					if (fadeToRespawnFromDeath <= 0.0f) {
+						newAlphaValue = 0.0f;
+					} else {
+						newAlphaValue = (m_fStateTimer / fadeToRespawnFromDeath);
+					}
 
-          SetDeathScreenAlphaFade(newAlphaValue);
-        }
-      }
-      break;
+					SetDeathScreenAlphaFade (newAlphaValue);
+				}
+			}
+			break;
 
-      case GameState.GS_ENTER_VICTORY: 
-      {
-          m_fStateTimer -= Time.deltaTime;
-          if (m_fStateTimer <= 0.0f) 
-          {
-            SwitchGameState(GameState.GS_VICTORY);
-          } 
-          else 
-          {
-            float newAlphaValue;
-            if (fadeToBlackTime <= 0.0f) 
-            {
-              newAlphaValue = 0.0f;
-            } 
-            else 
-            {
-              newAlphaValue = 1.0f - (m_fStateTimer / fadeToBlackTime);
-            }
+		case GameState.GS_ENTER_VICTORY: 
+			{
+				m_fStateTimer -= Time.deltaTime;
+				if (m_fStateTimer <= 0.0f) {
+					SwitchGameState (GameState.GS_VICTORY);
+				} else {
+					float newAlphaValue;
+					if (fadeToBlackTime <= 0.0f) {
+						newAlphaValue = 0.0f;
+					} else {
+						newAlphaValue = 1.0f - (m_fStateTimer / fadeToBlackTime);
+					}
 
-            SetVictoryScreenAlphaFade(newAlphaValue);
-          }
-        }
-      break;
+					SetVictoryScreenAlphaFade (newAlphaValue);
+				}
+			}
+			break;
 
-      case GameState.GS_VICTORY:
-      {
-          //let's fudge with the text
-          m_fStateTimer -= Time.deltaTime;
-          if(m_fStateTimer <= 0.0f) 
-          {
-            m_fStateTimer = secondsPerVictoryMessageCharacter;
-            m_iStateIndex++;
-          }
+		case GameState.GS_VICTORY:
+			{
+				//let's fudge with the text
+				m_fStateTimer -= Time.deltaTime;
+				if (m_fStateTimer <= 0.0f) {
+					m_fStateTimer = secondsPerVictoryMessageCharacter;
+					m_iStateIndex++;
+				}
 
-          string outputMessage = "";
-          char[] outputMessageStr = new char[32];
+				string outputMessage = "";
+				char[] outputMessageStr = new char[32];
 
-          if (m_iStateIndex < victoryMessage.Length)
-          {
-            //copy the string if we have a 0 or greater, otherwise we
-            //want to display the default empty string.
-            if (m_iStateIndex >= 0) 
-            {
-              victoryMessage.CopyTo(0, outputMessageStr, 0, m_iStateIndex);
-              outputMessage = new string(outputMessageStr);
-            }
-          } 
-          else
-          {
-            outputMessage = victoryMessage;
+				if (m_iStateIndex < victoryMessage.Length) {
+					//copy the string if we have a 0 or greater, otherwise we
+					//want to display the default empty string.
+					if (m_iStateIndex >= 0) {
+						victoryMessage.CopyTo (0, outputMessageStr, 0, m_iStateIndex);
+						outputMessage = new string (outputMessageStr);
+					}
+				} else {
+					outputMessage = victoryMessage;
 
-            //TODO: wait a bit, then
-            //go to title screen or go back to game.
-          }
-          SetVictoryText(outputMessage);
-      }
-      break;
-    }
-  }
+					//TODO: wait a bit, then
+					//go to title screen or go back to game.
+				}
+				SetVictoryText (outputMessage);
+			}
+			break;
+		}
+	}
 
-  void SwitchGameEvent (GameEvent newGE)
+	void SwitchGameEvent (GameEvent newGE)
 	{
 		switch (newGE) {
 		case GameEvent.NOTHING:
@@ -529,6 +499,6 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		UpdateGameState();
+		UpdateGameState ();
 	}
 }

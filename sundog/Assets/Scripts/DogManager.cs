@@ -10,7 +10,7 @@ public class DogManager : MonoBehaviour {
 		GOTO_PLAYER
 	};
 
-	Action action = Action.GOTO_PLAYER;
+	Action action = Action.NOTHING;
 
 	AudioSource audio;
 	public List<AudioClip> audioList;
@@ -52,7 +52,7 @@ public class DogManager : MonoBehaviour {
 			//foot step sound
 			audio.PlayOneShot (audioList[1]);
 			//add target to follow player
-			//this.GetComponent<AIFollowTargetInRange>().enabled = true;
+			this.GetComponent<AIFollowTargetInRange>().enabled = true;
 			break;
 
 		}
@@ -63,8 +63,9 @@ public class DogManager : MonoBehaviour {
 	{
 		if(input.myType == SoundProjector.ProjectorType.whistle)
 		{
+			timerBark = 6.0f;
+			newRandomTimeToBark = Random.Range (timerBark, 10.0f);
 			SetAction(Action.GOTO_PLAYER);
-			timerBark = 2.5f;
 		}
 	}
 
@@ -97,14 +98,15 @@ public class DogManager : MonoBehaviour {
 		GameObject temp = new GameObject();
 
 		temp.transform.position = this.transform.position;
-		temp.transform.rotation = this.transform.rotation;
+		//temp.transform.rotation = this.transform.rotation;
 
 		SoundProjector proj = temp.AddComponent<SoundProjector>();
 		proj.Project(type,angle,arc);
 
 
 	}
-	
+
+	float newRandomTimeToBark = 0.0f;
 	// Update is called once per frame
 	void Update () {
 
@@ -112,9 +114,10 @@ public class DogManager : MonoBehaviour {
 		{
 			timerBark += Time.deltaTime;
 
-			if(timerBark > 3.0f)
+			if(timerBark > 6.0f)
 			{
 				timerBark = 0.0f;
+				newRandomTimeToBark = Random.Range (6.0f, 10.0f);
 				BarkAndLight ();
 			}
 		}

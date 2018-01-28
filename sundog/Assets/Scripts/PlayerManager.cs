@@ -59,25 +59,6 @@ public class PlayerManager : MonoBehaviour
         //    col = gameObject.AddComponent<CircleCollider2D>();
         //}
 
-//
-//		//Stomp
-//		SendSignal(SoundProjector.ProjectorType.stomp, 360, Vector2.up);
-//	}
-//
-//	public void SendSignal(SoundProjector.ProjectorType type, float arc, Vector2 direction)
-//	{
-//
-//		float angle = SoundProjector.GetFullAngle(direction);
-//
-//		GameObject temp = new GameObject();
-//
-//		temp.transform.position = this.transform.position;
-//		temp.transform.rotation = this.transform.rotation;
-//
-//		SoundProjector proj = temp.AddComponent<SoundProjector>();
-//		proj.Project(type,angle,arc);
-//
-
 	}
   
   public bool IsDead() 
@@ -118,8 +99,6 @@ public class PlayerManager : MonoBehaviour
 		case State.ATTACKED:
 			audio.PlayOneShot (audioList [2]);
 			break;
-		case State.DOES_ECHO:
-			break;
 		}
 		state = newState;
 	}
@@ -138,12 +117,15 @@ public class PlayerManager : MonoBehaviour
 
 		case Action.WRISTLE:
 			audio.PlayOneShot (audioList [4]);
+			SetAction (Action.NOTHING);
 			break;
 		case Action.CLICK:
 			audio.PlayOneShot (audioList [5]);
+			SetAction (Action.NOTHING);
 			break;
 		case Action.STOMP:
 			audio.PlayOneShot (audioList [6]);
+			SetAction (Action.NOTHING);
 			break;
 		}
 		action = newAction;

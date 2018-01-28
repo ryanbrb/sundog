@@ -90,7 +90,7 @@ public class SoundProjector : MonoBehaviour {
 
         ProjectCircle(transform.position);
         spot.spotAngle = GetSpotAngle();
-        spot.intensity = Intensity * 20;
+        spot.intensity = Intensity * 40;
     }
 
     float GetSpotAngle()

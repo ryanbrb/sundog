@@ -29,6 +29,10 @@ public class EchoSystem : MonoBehaviour
 		{
 			go.SetActive (false);
 		}
+
+		//play STOMP once
+		echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, 360, 0);
+		SendSignal(SoundProjector.ProjectorType.stomp, 360, Vector2.up);
 	}
 		
 
@@ -122,7 +126,8 @@ public class EchoSystem : MonoBehaviour
                     scaleEcho = 0;
                     echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, 360, 0);
                     SendSignal(SoundProjector.ProjectorType.stomp, 360, Vector2.up);
-
+					// STOMP SOUND
+					this.GetComponentInParent<PlayerManager>().SetAction(PlayerManager.Action.STOMP);
                     return;
                 }
                 else
@@ -138,12 +143,16 @@ public class EchoSystem : MonoBehaviour
 
                         echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, arc, SoundProjector.GetFullAngle(orientationEcho));
                         SendSignal(SoundProjector.ProjectorType.whistle, arc, orientationEcho);
+						// STOMP WRISTLE
+						this.GetComponentInParent<PlayerManager>().SetAction(PlayerManager.Action.WRISTLE);
 
                     }
                     else if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.click)
                     {
                         echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, arc, SoundProjector.GetFullAngle(orientationEcho));
                         SendSignal(SoundProjector.ProjectorType.click, arc, orientationEcho);
+						// STOMP CLICK
+						this.GetComponentInParent<PlayerManager>().SetAction(PlayerManager.Action.CLICK);
                     }
 
                 }

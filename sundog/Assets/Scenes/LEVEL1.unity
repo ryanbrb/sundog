@@ -565,6 +565,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114397251402148574, guid: 488e0c475351c9b4ea64c5564ec1bd77,
         type: 2}
+      propertyPath: DeathStateCanvas
+      value: 
+      objectReference: {fileID: 933315344}
+    - target: {fileID: 114397251402148574, guid: 488e0c475351c9b4ea64c5564ec1bd77,
+        type: 2}
       propertyPath: DogSpawnPositions.Array.data[0]
       value: 
       objectReference: {fileID: 315663559}
@@ -618,11 +623,26 @@ Prefab:
       propertyPath: MonsterSpawnPositions.Array.data[6]
       value: 
       objectReference: {fileID: 2034127630}
-    - target: {fileID: 114397251402148574, guid: 488e0c475351c9b4ea64c5564ec1bd77,
+    - target: {fileID: 82172762327158154, guid: 488e0c475351c9b4ea64c5564ec1bd77,
         type: 2}
-      propertyPath: DeathStateCanvas
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82172762327158154, guid: 488e0c475351c9b4ea64c5564ec1bd77,
+        type: 2}
+      propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 933315344}
+      objectReference: {fileID: 8300000, guid: 0185a7999f10b044385302408b4d0b9a, type: 3}
+    - target: {fileID: 82172762327158154, guid: 488e0c475351c9b4ea64c5564ec1bd77,
+        type: 2}
+      propertyPath: m_Pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82172762327158154, guid: 488e0c475351c9b4ea64c5564ec1bd77,
+        type: 2}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114397251402148574, guid: 488e0c475351c9b4ea64c5564ec1bd77,
         type: 2}
       propertyPath: VictoryStateCanvas
