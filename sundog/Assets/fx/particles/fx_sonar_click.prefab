@@ -193,7 +193,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1264455181868106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.033864617, y: -0.055373967, z: 0}
+  m_LocalPosition: {x: -0.12265599, y: 0.033842146, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4311638055356674}
@@ -299,7 +299,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 663256658
+  randomSeed: -1948238549
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -6207,7 +6207,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 4294967039
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -10451,7 +10451,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -2042708876
+  randomSeed: 171137342
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -12998,7 +12998,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 4294967039
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -16408,7 +16408,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 4294967039
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -19814,7 +19814,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 4294967039
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -20685,7 +20685,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -1579834590
+  randomSeed: 2005629977
   InitialModule:
     serializedVersion: 3
     enabled: 1
