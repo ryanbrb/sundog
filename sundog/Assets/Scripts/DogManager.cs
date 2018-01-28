@@ -7,7 +7,8 @@ public class DogManager : MonoBehaviour {
 	public enum Action
 	{
 		NOTHING,
-		GOTO_PLAYER
+		GOTO_PLAYER,
+		DIED
 	};
 
 	Action action = Action.NOTHING;
@@ -54,7 +55,9 @@ public class DogManager : MonoBehaviour {
 			//add target to follow player
 			this.GetComponent<AIFollowTargetInRange>().enabled = true;
 			break;
-
+		case Action.DIED:
+			Destroy (this.gameObject);
+			break;
 		}
 		action = newAction;
 	}
@@ -86,7 +89,7 @@ public class DogManager : MonoBehaviour {
 			//we've collided with a monster, we're dead!
 			//TODO: verify or modify death condition
 			//for right now, one-hit death is okay
-			//SetAction(Action.DIED);
+			SetAction(Action.DIED);
 		}
 	}
 
@@ -114,7 +117,7 @@ public class DogManager : MonoBehaviour {
 		{
 			timerBark += Time.deltaTime;
 
-			if(timerBark > 6.0f)
+			if(timerBark > newRandomTimeToBark)
 			{
 				timerBark = 0.0f;
 				newRandomTimeToBark = Random.Range (6.0f, 10.0f);

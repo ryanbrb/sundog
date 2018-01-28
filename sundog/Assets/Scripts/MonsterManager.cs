@@ -36,9 +36,12 @@ public class MonsterManager : MonoBehaviour {
 			break;
 		case Action.DISCOVERED:
 			audio.PlayOneShot (audioList[0]);
+			//audio.loop = false;
 			break;
 		case Action.ATTACK:
-			audio.PlayOneShot (audioList[1]);
+			timerScream = 15.0f;
+			newRandomTimeToScream = Random.Range (timerScream, 30.0f);
+			//audio.loop = true;
 			break;
 
 		} 
@@ -50,9 +53,21 @@ public class MonsterManager : MonoBehaviour {
 	{
 		SetAction(Action.DISCOVERED);
 	}
-	
+
+	float timerScream = 0.0f;
+	float newRandomTimeToScream = 0.0f;
 	// Update is called once per frame
 	void Update () {
-		
+		if(action == Action.ATTACK)
+		{
+			timerScream += Time.deltaTime;
+
+			if(timerScream > newRandomTimeToScream)
+			{
+				timerScream = 0.0f;
+				newRandomTimeToScream = Random.Range (15.0f, 30.0f);
+				audio.PlayOneShot (audioList [1]);
+			}
+		}
 	}
 }
