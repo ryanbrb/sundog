@@ -7049,7 +7049,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -1053515121
+  randomSeed: 570680437
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -13828,7 +13828,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -569951949
+  randomSeed: 1089875397
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -14293,7 +14293,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 2
+      value: 4.18125
       mode: 3
       spread: 0
       speed:
@@ -14474,7 +14474,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 36
+        scalar: 72
         minScalar: 0
         maxCurve:
           serializedVersion: 2

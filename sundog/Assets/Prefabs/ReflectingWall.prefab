@@ -66,7 +66,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1719610666949290}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.267, y: -17.49, z: 0}
+  m_LocalPosition: {x: -6.9575453, y: -4.893624, z: 0}
   m_LocalScale: {x: 5.25, y: 0.23750043, z: 1}
   m_Children:
   - {fileID: 4623600729523724}
@@ -165,12 +165,12 @@ MonoBehaviour:
   timeout: 0
   collidedSounds: []
   effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
+  barkEffect: {fileID: 1264455181868106, guid: 6bdd223e7a563ba4f8ad7fda5d155420, type: 2}
   clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
     type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
+  stompEffect: {fileID: 1264455181868106, guid: d4b8580995019ba4e822d80d4919daee,
     type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
+  whistleEffect: {fileID: 1264455181868106, guid: 3cc6e809a79fa004cb37aa71a3a74ec7,
     type: 2}
   monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
     type: 2}

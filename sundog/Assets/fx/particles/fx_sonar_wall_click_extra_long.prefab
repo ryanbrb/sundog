@@ -158,14 +158,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1264455181868106}
-  m_LocalRotation: {x: -0, y: -0, z: -0.38452044, w: 0.9231165}
-  m_LocalPosition: {x: -3.8411093, y: -3.8918314, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 40.07398, y: 18.704529, z: -1.4991916}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4311638055356674}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45.228}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &114010656732163650
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7049,7 +7049,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 894156219
+  randomSeed: 2046880054
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -13828,7 +13828,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 658288445
+  randomSeed: 1705717288
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -14293,7 +14293,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 8
+      value: 16.725
       mode: 3
       spread: 0
       speed:
@@ -14474,7 +14474,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 144
+        scalar: 288
         minScalar: 0
         maxCurve:
           serializedVersion: 2
