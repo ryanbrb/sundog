@@ -4,39 +4,44 @@ using UnityEngine;
 
 public class ReflectorSettings : MonoBehaviour {
 
+  public float tinyMaximumTreshold = 0.25f;
   public float shortMaximumXThreshold = 5.0f;
   public float mediumMaximumXThreshold = 10.0f;
   public float longMaximumXThreshold = 20.0f;
-  //anything bigger can be considered of extrea long
-  //public float extraLongMaximumXthreshold = 45.0f;
+    //anything bigger can be considered of extrea long
+    //public float extraLongMaximumXthreshold = 45.0f;
 
-  //click effects
-  public GameObject shortClickPrefab = null;
+    //click effects
+    public GameObject tinyClickPrefab = null;
+    public GameObject shortClickPrefab = null;
   public GameObject mediumClickPrefab = null;
   public GameObject longClickPrefab = null;
   public GameObject extraLongClickPrefab = null;
 
-  //whistle effects
-  public GameObject shortWhistlePrefab = null;
+    //whistle effects
+    public GameObject tinyWhistlePrefab = null;
+    public GameObject shortWhistlePrefab = null;
   public GameObject mediumWhistlePrefab = null;
   public GameObject longWhistlePrefab = null;
   public GameObject extraLongWhistlePrefab = null;
 
-  //stomp effects
-  public GameObject shortStompPrefab = null;
+    //stomp effects
+    public GameObject tinyStompPrefab = null;
+    public GameObject shortStompPrefab = null;
   public GameObject mediumStompPrefab = null;
   public GameObject longStompPrefab = null;
   public GameObject extraLongStompPrefab = null;
 
-  //bark effects
-  public GameObject shortBarkPrefab = null;
+    //bark effects
+    public GameObject tinyBarkPrefab = null;
+    public GameObject shortBarkPrefab = null;
   public GameObject mediumBarkPrefab = null;
   public GameObject longBarkPrefab = null;
   public GameObject extraLongBarkPrefab = null;
 
-  //monster effects
-  public GameObject shortMonsterPrefab = null;
-  public GameObject mediumMonsterPrefab = null;
+    //monster effects
+    public GameObject tinyMonsterPrefab = null;
+    public GameObject mediumMonsterPrefab = null;
   public GameObject longMonsterPrefab = null;
   public GameObject extraLongMonsterPrefab = null;
 
@@ -55,6 +60,7 @@ public class ReflectorSettings : MonoBehaviour {
       if(reflectorInstance.name.Contains("ReflectingWall")) 
       {
         //this may or may not use the local scale
+        bool bIsTinyPiece = (reflectorInstance.transform.localScale.x < shortMaximumXThreshold);
         bool bIsShortPiece = (reflectorInstance.transform.localScale.x < shortMaximumXThreshold);
         bool bisMediumPiece = (reflectorInstance.transform.localScale.x < mediumMaximumXThreshold);
         bool bIsLongPiece = (reflectorInstance.transform.localScale.x < longMaximumXThreshold);
