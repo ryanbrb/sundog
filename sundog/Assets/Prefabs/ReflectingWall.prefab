@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23021733490981664}
   - component: {fileID: 61452911456279628}
   - component: {fileID: 114263089327924058}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ReflectingWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1719610666949290}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.02, y: -0.08, z: 0}
   m_LocalScale: {x: 2.2058437, y: 0.23750031, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeout: 0
+  collidedSounds: []
   effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
   type: 0
-  minimumIntensity: 0.3
+  minimumIntensity: 0.1

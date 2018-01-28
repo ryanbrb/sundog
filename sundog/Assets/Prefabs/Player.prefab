@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4389178210846018}
   - component: {fileID: 198541283469435638}
   - component: {fileID: 199504598098328128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Center_Flare_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4039966799294026}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EchoIcons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 4594449994739954}
   - component: {fileID: 198587122424948622}
   - component: {fileID: 199323099404384448}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Energy_power_thunder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 198180867202591188}
   - component: {fileID: 199266152219023608}
   - component: {fileID: 82432039873091180}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_Bughole_circle(Main Camera)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 198856362827241216}
   - component: {fileID: 199852639553314902}
   - component: {fileID: 82813770999925692}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_Eletric_ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 4605592201486436}
   - component: {fileID: 198380861452149076}
   - component: {fileID: 199863006423039288}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stamp_Lightbeam_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 4864987436978874}
   - component: {fileID: 33180115854395172}
   - component: {fileID: 23927340745869252}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 4724431750090058}
   - component: {fileID: 212302625415610650}
   - component: {fileID: 114380277579905296}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: STOMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 198129136836558850}
   - component: {fileID: 199548668327676536}
   - component: {fileID: 82480287215387454}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_Recover_hold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 4568556180542928}
   - component: {fileID: 198917261012527118}
   - component: {fileID: 199218604790684942}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stamp_Lightbeam_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 82659987408254962}
   - component: {fileID: 114120349540916504}
   - component: {fileID: 58759172700558642}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 4775737637981802}
   - component: {fileID: 198241342108729284}
   - component: {fileID: 199328317420182748}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stamp_Thunder_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 4732761676205912}
   - component: {fileID: 198419757425294408}
   - component: {fileID: 199565733877961312}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stuff_smoke_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 4484916937857936}
   - component: {fileID: 198603465492762120}
   - component: {fileID: 199631646700213516}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle_contaryball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4618748347694462}
   - component: {fileID: 212408730260031026}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ArrowPlayer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 4612016898076756}
   - component: {fileID: 198695508519959536}
   - component: {fileID: 199765940410660592}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle_standard_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 4903124612590392}
   - component: {fileID: 198405674745668928}
   - component: {fileID: 199449400069935650}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dots_White_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 4362252462820346}
   - component: {fileID: 212083106623554624}
   - component: {fileID: 114784408370857602}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WRISTLE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 4550887187677494}
   - component: {fileID: 212556504202363676}
   - component: {fileID: 114323554376259546}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CLICK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 4519000626649726}
   - component: {fileID: 198321280877236164}
   - component: {fileID: 199616431104848970}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stamp_normal_direct_fire88
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 4410737206433936}
   - component: {fileID: 198855173401781968}
   - component: {fileID: 199305015785765318}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stuff_smoke_02_b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ GameObject:
   - component: {fileID: 4574933071804216}
   - component: {fileID: 198913836699518954}
   - component: {fileID: 199843203016305240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dots_snow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
