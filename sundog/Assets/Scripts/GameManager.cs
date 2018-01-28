@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
 	AudioSource AmbientAudio;
 
 
-	List<AudioClip> audioList;
+	public List<AudioClip> audioList;
 
 	// Use this for initialization
 	void Start ()
@@ -412,6 +412,8 @@ public class GameManager : MonoBehaviour
 
 		case GameState.GS_DEATH: 
 			{
+				SceneManager.LoadScene ("LEVEL1", LoadSceneMode.Single);
+
 				//check to see if death sequence is over
 				bool bDeathSequenceOver = false;
 				m_fStateTimer -= Time.deltaTime;

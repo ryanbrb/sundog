@@ -51,9 +51,9 @@ public class AIFollowTargetInRange : MonoBehaviour
 				//if you're searching, go about your normal behavior
 				if (m_randomWalkComponent != null) {
 					m_randomWalkComponent.enabled = true;
-					if(this.gameObject.tag != "dog")				{
-						this.GetComponentInParent<MonsterManager> ().SetAction(MonsterManager.Action.NOTHING);
-					}
+//					if(this.gameObject.tag != "dog")				{
+//						this.GetComponentInParent<MonsterManager> ().SetAction(MonsterManager.Action.NOTHING);
+//					}
 				}
 			}
 			break;
@@ -66,9 +66,9 @@ public class AIFollowTargetInRange : MonoBehaviour
 				if (m_randomWalkComponent != null) {
 					m_randomWalkComponent.enabled = false;
 				}
-				if(this.gameObject.tag != "dog")			{
-					this.GetComponentInParent<MonsterManager> ().SetAction(MonsterManager.Action.ATTACK);
-				}
+//				if(this.gameObject.tag != "dog")			{
+//					this.GetComponentInParent<MonsterManager> ().SetAction(MonsterManager.Action.ATTACK);
+//				}
 					
 				m_agent.destination = targetGameObject.transform.position;
 			}
@@ -139,11 +139,11 @@ public class AIFollowTargetInRange : MonoBehaviour
 						bUpdateTargetPosition = true;
 						m_fStateTimer = LineOfSightCheckFrequencyDuringFollow;
 					} 
-					else 
-					{
-						SwitchState (FollowTargetState.FTS_SEARCH);
-					
-					}
+//					else 
+//					{
+//						SwitchState (FollowTargetState.FTS_SEARCH);
+//					
+//					}
 				}
 
 				//if we had line of sight, update target position

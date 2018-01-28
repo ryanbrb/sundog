@@ -94,11 +94,6 @@
      <Compile Include="Assets\ASSETS\NavMeshComponents\NavMeshComponents\Scripts\NavMeshModifier.cs" />
      <Compile Include="Assets\ASSETS\NavMeshComponents\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
      <Compile Include="Assets\ASSETS\NavMeshComponents\NavMeshComponents\Scripts\NavMeshSurface.cs" />
-     <Compile Include="Assets\ASSETS\NavMeshComponents\Tests\NavMeshSurfaceAgentTests.cs" />
-     <Compile Include="Assets\ASSETS\NavMeshComponents\Tests\NavMeshSurfaceLinkTests.cs" />
-     <Compile Include="Assets\ASSETS\NavMeshComponents\Tests\NavMeshSurfaceModifierTests.cs" />
-     <Compile Include="Assets\ASSETS\NavMeshComponents\Tests\NavMeshSurfaceModifierVolumeTests.cs" />
-     <Compile Include="Assets\ASSETS\NavMeshComponents\Tests\NavMeshSurfaceTests.cs" />
      <Compile Include="Assets\ASSETS\Radial Menu Framework\Scripts\RMF_Demo.cs" />
      <Compile Include="Assets\ASSETS\Radial Menu Framework\Scripts\RMF_ForceDirection.cs" />
      <Compile Include="Assets\ASSETS\Radial Menu Framework\Scripts\RMF_RadialMenu.cs" />
