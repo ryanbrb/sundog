@@ -41,8 +41,8 @@ public class SoundProjector : MonoBehaviour {
         spot = this.gameObject.AddComponent<Light>();
 
         spot.type = LightType.Spot;
-        spot.intensity = 10;
-        spot.spotAngle = 1;
+        spot.intensity = 0;
+        spot.spotAngle = 0;
         spot.range = 12;
     }
 
@@ -90,7 +90,7 @@ public class SoundProjector : MonoBehaviour {
 
         ProjectCircle(transform.position);
         spot.spotAngle = GetSpotAngle();
-        spot.intensity = Intensity * 10;
+        spot.intensity = Intensity * 5;
     }
 
     float GetSpotAngle()
