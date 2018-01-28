@@ -96,7 +96,7 @@ public class SoundProjector : MonoBehaviour {
         switch (myType)
         {
             case ProjectorType.bark:
-                spot.color = new Color(255, 180, 127);
+                spot.color = new Color(1, 180/256, 127/256, 1);
                 break;
             case ProjectorType.whistle:
                 spot.color = Color.magenta;
