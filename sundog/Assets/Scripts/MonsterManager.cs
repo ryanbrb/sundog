@@ -31,20 +31,24 @@ public class MonsterManager : MonoBehaviour {
 	public void SetAction(Action newAction)
 	{
 		GameManager GM = GameObject.FindObjectOfType<GameManager> ();
+		PlayerManager PM = GameObject.FindObjectOfType<PlayerManager> ();
+
+
 		switch(newAction)
 		{
 		case Action.NOTHING:
 			GM.GetComponent<GameManager>().SwitchGameEvent(GameManager.GameEvent.NOTHING);
 			break;
 		case Action.DISCOVERED:
-			audio.PlayOneShot (audioList[0]);
+			audio.PlayOneShot (audioList [0]);
+			PM.GetComponent<PlayerManager> ().SetState (PlayerManager.State.PANIC);
 			//audio.loop = false;
 			break;
 		case Action.ATTACK:
 			timerScream = 15.0f;
 			newRandomTimeToScream = Random.Range (timerScream, 30.0f);
 			GM.GetComponent<GameManager>().SwitchGameEvent(GameManager.GameEvent.ATTACK);
-
+			PM.GetComponent<PlayerManager> ().SetState (PlayerManager.State.ATTACKED);
 			//audio.loop = true;
 			break;
 

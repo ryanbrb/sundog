@@ -31,7 +31,7 @@ public class EchoSystem : MonoBehaviour
 		}
 
 		//play STOMP once
-		echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, 360, 0);
+		echoList[1].GetComponent<Echo>().SpawnParticleSystem(transform.position, 360, 0);
 		SendSignal(SoundProjector.ProjectorType.stomp, 360, Vector2.up);
 		this.GetComponentInParent<PlayerManager>().SetAction(PlayerManager.Action.STOMP);
 	}
