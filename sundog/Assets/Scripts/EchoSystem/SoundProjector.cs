@@ -29,6 +29,22 @@ public class SoundProjector : MonoBehaviour {
     float Intensity = 1;
     float CircleTargetRadius;
     float CircleRadius = 0;
+    Light spot;
+
+    public void Start()
+    {
+        Vector3 setPos = this.transform.position;
+
+        setPos.z = -10;
+        this.transform.position = setPos;
+
+        spot = this.gameObject.AddComponent<Light>();
+
+        spot.type = LightType.Spot;
+        spot.intensity = 10;
+        spot.spotAngle = 1;
+        spot.range = 12;
+    }
 
     public float GetIntensity()
     {
@@ -70,11 +86,26 @@ public class SoundProjector : MonoBehaviour {
             Destroy(gameObject);
             return;
         }
-
         Intensity -= IntensityFallOff*Time.deltaTime*ProjectionRate; // TODO should not be linear;
+
         ProjectCircle(transform.position);
+        spot.spotAngle = GetSpotAngle();
+        spot.intensity = Intensity * 10;
     }
-    
+
+    float GetSpotAngle()
+    {
+        Vector3 compareposition = this.transform.position + (Vector3.up*CircleRadius);
+        compareposition.z = 0;
+
+        Debug.DrawLine(transform.position, compareposition,Color.yellow);
+        Vector3 compareDirection = (compareposition - this.transform.position);
+        float diff =  Vector3.Angle(Vector3.forward, compareDirection);
+        
+        Debug.Log(diff);
+
+        return diff*1.5f;
+    }
     public static float GetFullAngle(Vector2 direction)
     {
        return (direction.x > 0) ? Vector2.Angle(Vector2.up, direction) : 360 - Vector2.Angle(Vector2.up, direction);
