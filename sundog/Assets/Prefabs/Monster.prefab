@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 82662905520701374}
   - component: {fileID: 195747371819708668}
   - component: {fileID: 114808985076482392}
+  - component: {fileID: 114648814678503370}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -66,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1031021873090816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 29.169395, y: 23.521542, z: -26.080618}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4076174141653780}
@@ -153,6 +154,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114648814678503370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1031021873090816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef73ee6a9cb0964995c9475d3ec5eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetGameObject: {fileID: 0}
+  LineOfSightCheckFrequency: 1.5
+  LineOfSightCheckFrequencyDuringFollow: 0.5
+  SightRadius: 15
 --- !u!114 &114808985076482392
 MonoBehaviour:
   m_ObjectHideFlags: 1
