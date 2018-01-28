@@ -18,7 +18,8 @@ public class AIRandomWalk : MonoBehaviour {
     if (m_agent.pathPending || m_agent.remainingDistance > 0.1f)
       return;
 
-    m_agent.destination = m_Range * Random.insideUnitCircle;
+		m_agent.destination = new Vector3(m_Range * Random.insideUnitCircle.x, m_Range * Random.insideUnitCircle.y, 0.0f) ;
+
   }
 
   void OnDrawGizmosSelected() 
