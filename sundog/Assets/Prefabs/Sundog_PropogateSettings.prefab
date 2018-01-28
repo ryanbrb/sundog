@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1308692105905434}
+  m_IsPrefabParent: 1
+--- !u!1 &1308692105905434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4466204923795490}
+  - component: {fileID: 114078241292816592}
+  m_Layer: 0
+  m_Name: Sundog_PropogateSettings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4466204923795490
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1308692105905434}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6848993, y: 0.4694972, z: 1.5306726}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114078241292816592
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1308692105905434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c686801d784d8b4488bde3adff4cd5b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shortMaximumXThreshold: 5
+  mediumMaximumXThreshold: 10
+  longMaximumXThreshold: 20
+  shortClickPrefab: {fileID: 1264455181868106, guid: c9530945d10d52d498fe3eb75931b5c1,
+    type: 2}
+  mediumClickPrefab: {fileID: 1264455181868106, guid: 0e221f970f797c347adc8d56fa57239f,
+    type: 2}
+  longClickPrefab: {fileID: 1264455181868106, guid: c32f5fd742592ab4eb2393d46828d58d,
+    type: 2}
+  extraLongClickPrefab: {fileID: 1264455181868106, guid: c668fb8c2beb8d74ead03337a77a824e,
+    type: 2}
+  shortWhistlePrefab: {fileID: 1264455181868106, guid: 3cc6e809a79fa004cb37aa71a3a74ec7,
+    type: 2}
+  mediumWhistlePrefab: {fileID: 1264455181868106, guid: 9b348066cba298249812d3a507dcdaaf,
+    type: 2}
+  longWhistlePrefab: {fileID: 1264455181868106, guid: efd91339a03f8514e9d7d2f99d300b04,
+    type: 2}
+  extraLongWhistlePrefab: {fileID: 1264455181868106, guid: dfdfee383f98a554caa52395a0a51e5f,
+    type: 2}
+  shortStompPrefab: {fileID: 1264455181868106, guid: d4b8580995019ba4e822d80d4919daee,
+    type: 2}
+  mediumStompPrefab: {fileID: 1264455181868106, guid: 5954118a62b6d3c40b31a2420b6ff5d8,
+    type: 2}
+  longStompPrefab: {fileID: 1264455181868106, guid: 64b582958d517464a9f2747b0167f10d,
+    type: 2}
+  extraLongStompPrefab: {fileID: 1264455181868106, guid: 4260c4275d1766941ab1e17b93703a8a,
+    type: 2}
+  shortBarkPrefab: {fileID: 1264455181868106, guid: 6bdd223e7a563ba4f8ad7fda5d155420,
+    type: 2}
+  mediumBarkPrefab: {fileID: 1264455181868106, guid: bc9ca672d51ec594bb0e607823a52b36,
+    type: 2}
+  longBarkPrefab: {fileID: 1264455181868106, guid: d49eeb14962d3ef45b4f235484e0201b,
+    type: 2}
+  extraLongBarkPrefab: {fileID: 1264455181868106, guid: 3391ecc1cb217224091a7e545a2beba8,
+    type: 2}
+  shortMonsterPrefab: {fileID: 0}
+  mediumMonsterPrefab: {fileID: 0}
+  longMonsterPrefab: {fileID: 0}
+  extraLongMonsterPrefab: {fileID: 0}
