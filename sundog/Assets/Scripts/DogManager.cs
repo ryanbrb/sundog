@@ -14,11 +14,15 @@ public class DogManager : MonoBehaviour {
 	Action action = Action.NOTHING;
 
 	AudioSource audio;
-	List<AudioClip> audioList;
+	public List<AudioClip> audioList;
 
 	// Use this for initialization
 	void Start () {
 		audio = GetComponent<AudioSource> ();
+		if(GetComponent<Reflector> () == null)
+		{
+			gameObject.AddComponent<Reflector> ();
+		}
 	}
 
 	public void SetAction(Action newAction)
@@ -28,18 +32,25 @@ public class DogManager : MonoBehaviour {
 		case Action.NOTHING:
 			break;
 		case Action.BARK:
+			audio.PlayOneShot (audioList[0]);
 			break;
 		case Action.WALK:
+			audio.PlayOneShot (audioList[1]);
 			break;
 
 		}
 		action = newAction;
 	}
 
-	void PlayAudioFromGameManager(int i)
+	public void EchoMessage(SoundProjector input)
 	{
-		audio.PlayOneShot (audioList[i]);
-		audio.Play ();
+		if(input.myType == SoundProjector.ProjectorType.whistle)
+		{
+			SetAction(Action.BARK);
+			SetAction(Action.WALK);
+
+			//input.transform.position
+		}
 
 	}
 	

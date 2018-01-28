@@ -30,7 +30,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1024304655666470
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -394,15 +394,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1024304655666470}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4362252462820346}
   - {fileID: 4724431750090058}
   - {fileID: 4550887187677494}
-  m_Father: {fileID: 4725927677653510}
-  m_RootOrder: 1
+  m_Father: {fileID: 4618748347694462}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4362252462820346
 Transform:
@@ -559,9 +559,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4039966799294026}
   m_Father: {fileID: 4725927677653510}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4690061071728440
 Transform:
@@ -624,7 +625,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4864987436978874}
-  - {fileID: 4039966799294026}
   - {fileID: 4618748347694462}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1142,6 +1142,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e593fb8f777044c96603aa7fd9fa89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioList:
+  - {fileID: 8300000, guid: 94d4d6cd1dfb6e44688171077bdee9c2, type: 3}
+  - {fileID: 8300000, guid: edb02321471c1c944b274bd7ce498695, type: 3}
+  - {fileID: 8300000, guid: c90a75f7c9166ca4fb77462bb344aeb1, type: 3}
+  - {fileID: 8300000, guid: aa813104dde32f64487903fa8774d829, type: 3}
+  - {fileID: 8300000, guid: b7f73097e1a1c4440a45fbe7da78d69c, type: 3}
+  - {fileID: 8300000, guid: 8c525e1e2efc6884eb9aad64c847af0d, type: 3}
+  - {fileID: 8300000, guid: 4253ea676060e49dd9488f73d692ea2a, type: 3}
   speed: 0
 --- !u!114 &114784408370857602
 MonoBehaviour:
@@ -52236,7 +52244,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3e7020fd70ac13c4b8f7269bae2aa812, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 56bfa438bcbf1234bb8f2cf0a82870e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

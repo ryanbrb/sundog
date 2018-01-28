@@ -7,19 +7,25 @@ public class MonsterManager : MonoBehaviour {
 	public enum Action
 	{
 		NOTHING,
-		ATTACK,
-		WALK
+		DISCOVERED,
+		ATTACK
+
 	};
 
 	Action action = Action.NOTHING;
 
 	AudioSource audio;
-	List<AudioClip> audioList;
+	public List<AudioClip> audioList;
 
 	// Use this for initialization
 	void Start () {
 		audio = GetComponent<AudioSource> ();
 	
+		if(GetComponent<Reflector> () == null)
+		{
+			gameObject.AddComponent<Reflector> ();
+		}
+			
 	}
 
 	public void SetAction(Action newAction)
@@ -28,12 +34,14 @@ public class MonsterManager : MonoBehaviour {
 		{
 		case Action.NOTHING:
 			break;
-		case Action.ATTACK:
+		case Action.DISCOVERED:
+			audio.PlayOneShot (audioList[0]);
 			break;
-		case Action.WALK:
+		case Action.ATTACK:
+			audio.PlayOneShot (audioList[1]);
 			break;
 
-		}
+		} 
 		action = newAction;
 	}
 
@@ -42,6 +50,11 @@ public class MonsterManager : MonoBehaviour {
 		audio.PlayOneShot (audioList[i]);
 		audio.Play ();
 
+	}
+
+	public void Discovered()
+	{
+		SetAction(Action.DISCOVERED);
 	}
 	
 	// Update is called once per frame
