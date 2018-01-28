@@ -4,20 +4,17 @@ using UnityEngine;
 
 public class Reflector : MonoBehaviour {
 
-   
-
-    public enum ReflectorType
-    {
-        basic = 0
-    }
-
     public float timeout;
 
     public List<SoundProjector> collidedSounds;
 
     public GameObject effect;
+    public GameObject barkEffect;
+    public GameObject clickEffect;
+    public GameObject stompEffect;
+    public GameObject whistleEffect;
+    public GameObject monsterEffect;
 
-    public ReflectorType type = ReflectorType.basic;
     public float minimumIntensity = 0.3f;
 
     private void Start()
@@ -37,7 +34,30 @@ public class Reflector : MonoBehaviour {
             if (input.GetIntensity() > minimumIntensity)
             {
                 SendMessage("Discovered", SendMessageOptions.DontRequireReceiver);
-                GameObject temp = Instantiate(effect);
+                SendMessage("EchoMessage", input, SendMessageOptions.DontRequireReceiver);
+                GameObject temp = null;
+                switch (input.myType)
+                {
+                    case SoundProjector.ProjectorType.bark:
+                        temp = Instantiate(barkEffect);
+                        break;
+                    case SoundProjector.ProjectorType.click:
+                        temp = Instantiate(clickEffect);
+                        break;
+                    case SoundProjector.ProjectorType.whistle:
+                        temp = Instantiate(whistleEffect);
+                        break;
+                    case SoundProjector.ProjectorType.stomp:
+                        temp = Instantiate(stompEffect);
+                        break;
+                    case SoundProjector.ProjectorType.monster:
+                        temp = Instantiate(monsterEffect);
+                        break;
+                    default:
+                        temp =Instantiate(effect);
+                        break;
+                }
+
                 temp.transform.position = this.transform.position;
                 temp.transform.rotation = this.transform.rotation;
 
