@@ -20,6 +20,9 @@ public class DogManager : MonoBehaviour {
 
 	float timerBark = 0.0f;
 
+    Animator myAnimator;
+    Transform child;
+
 	// Use this for initialization
 	void Start () {
 		audio = GetComponent<AudioSource> ();
@@ -28,6 +31,8 @@ public class DogManager : MonoBehaviour {
 			gameObject.AddComponent<Reflector> ();
 		}
 
+        myAnimator = GetComponentInChildren<Animator>();
+        child = transform.GetChild(0);
     //adding follow behavior if it hasn't been added
     followBehavior = GetComponent<AIFollowTargetOnCommand>();
     if(followBehavior == null) 
@@ -69,17 +74,20 @@ public class DogManager : MonoBehaviour {
 			timerBark = 6.0f;
 			newRandomTimeToBark = Random.Range (timerBark, 10.0f);
 			SetAction(Action.GOTO_PLAYER);
-		}
+            BarkAndLight();
+        }
 	}
 
 	void BarkAndLight()
 	{
-		//bark
-		audio.PlayOneShot (audioList[0]);
+        //bark
+        myAnimator.SetTrigger("Bark");
+        audio.PlayOneShot (audioList[0]);
 		//light on
 		SendSignal(SoundProjector.ProjectorType.bark, 360, Vector2.zero);
 		GetComponent<Echo> ().SpawnParticleSystem (this.transform.position, 360, 0);
-	}
+        
+    }
 
 	void OnTriggerEnter2D(Collider2D other) 
 	{
@@ -115,7 +123,8 @@ public class DogManager : MonoBehaviour {
 
 		if(action == Action.GOTO_PLAYER)
 		{
-			timerBark += Time.deltaTime;
+            myAnimator.SetBool("IsWalking", true);
+            timerBark += Time.deltaTime;
 
 			if(timerBark > newRandomTimeToBark)
 			{
@@ -124,5 +133,12 @@ public class DogManager : MonoBehaviour {
 				BarkAndLight ();
 			}
 		}
-	}
+        else
+        {
+            myAnimator.SetBool("IsWalking", false);
+        }
+        child.eulerAngles = new Vector3(0, 0, 0);
+
+
+    }
 }

@@ -75,40 +75,7 @@ public class ReflectorSettings : MonoBehaviour {
             if (tinyBarkPrefab != null) { reflectorInstance.barkEffect = tinyBarkPrefab; }
             if (tinyMonsterPrefab != null) { reflectorInstance.monsterEffect = tinyMonsterPrefab; }
         }
-        /*else if (bIsShortPiece) 
-        {
-          if (shortClickPrefab != null) { reflectorInstance.clickEffect = shortClickPrefab; }
-          if (shortWhistlePrefab != null) { reflectorInstance.whistleEffect = shortWhistlePrefab; }
-          if (shortStompPrefab != null) { reflectorInstance.stompEffect = shortStompPrefab; }
-          if (shortBarkPrefab != null) { reflectorInstance.barkEffect = shortBarkPrefab; }
-          if (shortMonsterPrefab != null) { reflectorInstance.monsterEffect = shortMonsterPrefab; }
-        }
-
-        else if (bisMediumPiece) 
-        {
-          if (mediumClickPrefab != null) { reflectorInstance.clickEffect = mediumClickPrefab; }
-          if (mediumWhistlePrefab != null) { reflectorInstance.whistleEffect = mediumWhistlePrefab; }
-          if (mediumStompPrefab != null) { reflectorInstance.stompEffect = mediumStompPrefab; }
-          if (mediumBarkPrefab != null) { reflectorInstance.barkEffect = mediumBarkPrefab; }
-          if (mediumMonsterPrefab != null) { reflectorInstance.monsterEffect = mediumMonsterPrefab; }
-        } 
         
-        else if (bIsLongPiece) 
-        {
-          if (longClickPrefab != null) { reflectorInstance.clickEffect = longClickPrefab; }
-          if (longWhistlePrefab != null) { reflectorInstance.whistleEffect = longWhistlePrefab; }
-          if (longStompPrefab != null) { reflectorInstance.stompEffect = longStompPrefab; }
-          if (longBarkPrefab != null) { reflectorInstance.barkEffect = longBarkPrefab; }
-          if (longMonsterPrefab != null) { reflectorInstance.monsterEffect = longMonsterPrefab; }
-        } 
-        
-        else if (bIsExtraLongPiece) {
-          if (extraLongClickPrefab != null) { reflectorInstance.clickEffect = extraLongClickPrefab; }
-          if (extraLongWhistlePrefab != null) { reflectorInstance.whistleEffect = extraLongWhistlePrefab; }
-          if (extraLongStompPrefab != null) { reflectorInstance.stompEffect = extraLongStompPrefab; }
-          if (extraLongBarkPrefab != null) { reflectorInstance.barkEffect = extraLongBarkPrefab; }
-          if (extraLongMonsterPrefab != null) { reflectorInstance.monsterEffect = extraLongMonsterPrefab; }
-        }*/
       }
     }
   }

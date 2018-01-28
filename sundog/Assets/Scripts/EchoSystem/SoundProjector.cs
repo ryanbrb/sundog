@@ -44,6 +44,7 @@ public class SoundProjector : MonoBehaviour {
         spot.intensity = 0;
         spot.spotAngle = 0;
         spot.range = 12;
+        spot.bounceIntensity = 0;
     }
 
     public float GetIntensity()
@@ -96,7 +97,7 @@ public class SoundProjector : MonoBehaviour {
         switch (myType)
         {
             case ProjectorType.bark:
-                spot.color = new Color(1, 180/256, 127/256, 1);
+                spot.color = new Color(1, 0.75f, 127 /256, 1);
                 break;
             case ProjectorType.whistle:
                 spot.color = Color.magenta;

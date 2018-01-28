@@ -35,34 +35,7 @@ public class Reflector : MonoBehaviour {
             {
                 SendMessage("Discovered", SendMessageOptions.DontRequireReceiver);
                 SendMessage("EchoMessage", input, SendMessageOptions.DontRequireReceiver);
-                GameObject temp = null;
-                switch (input.myType)
-                {
-                    case SoundProjector.ProjectorType.bark:
-                        temp = barkEffect;
-                        break;
-                    case SoundProjector.ProjectorType.click:
-                        temp = clickEffect;
-                        break;
-                    case SoundProjector.ProjectorType.whistle:
-                        temp = whistleEffect;
-                        break;
-                    case SoundProjector.ProjectorType.stomp:
-                        temp = stompEffect;
-                        break;
-                    case SoundProjector.ProjectorType.monster:
-                        temp = monsterEffect;
-                        break;
-                    default:
-                        temp = effect;
-                        break;
-                }
-                if (temp != null)
-                {
-                    temp = Instantiate(temp);
-                    temp.transform.position = this.transform.position;
-                    temp.transform.rotation = this.transform.rotation;
-                }
+                
                 return true;
             }
            

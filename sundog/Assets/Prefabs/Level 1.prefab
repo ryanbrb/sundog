@@ -1917,6 +1917,7 @@ GameObject:
   - component: {fileID: 23471606304351812}
   - component: {fileID: 114764029143062020}
   - component: {fileID: 64143140234607996}
+  - component: {fileID: 114500240442248184}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -13011,6 +13012,34 @@ MonoBehaviour:
   whistleEffect: {fileID: 0}
   monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
+--- !u!114 &114500240442248184
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1544252651001620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.1
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: f4814906ace1349438fbf616f8bd8441, type: 2}
 --- !u!114 &114529531126324136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13462,7 +13491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AgentTypeID: 0
+  m_AgentTypeID: -1372625422
   m_CollectObjects: 0
   m_Size: {x: 10, y: 10, z: 10}
   m_Center: {x: 0, y: 2, z: 0}
@@ -13476,9 +13505,9 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.1
+  m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: bd3961ac596033b4da79498f607a94f5, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 89e786ea7cd53fa4d8b15a41b2a286e4, type: 2}
 --- !u!114 &114764400531092952
 MonoBehaviour:
   m_ObjectHideFlags: 1
