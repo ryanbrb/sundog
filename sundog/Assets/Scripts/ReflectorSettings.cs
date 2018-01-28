@@ -41,6 +41,7 @@ public class ReflectorSettings : MonoBehaviour {
 
     //monster effects
     public GameObject tinyMonsterPrefab = null;
+    public GameObject shortMonsterPrefab = null;
     public GameObject mediumMonsterPrefab = null;
   public GameObject longMonsterPrefab = null;
   public GameObject extraLongMonsterPrefab = null;
