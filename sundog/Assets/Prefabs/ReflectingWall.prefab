@@ -123,5 +123,13 @@ MonoBehaviour:
   timeout: 0
   collidedSounds: []
   effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  type: 0
+  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
+  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
+    type: 2}
+  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
+    type: 2}
+  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
+    type: 2}
+  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
+    type: 2}
   minimumIntensity: 0.1
