@@ -2860,7 +2860,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    minKillSpeed: 10
+    minKillSpeed: 11
     maxKillSpeed: 10000
     radiusScale: 1
     collidesWith:
@@ -3736,7 +3736,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -1336005613
+  randomSeed: 662953390
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -9639,7 +9639,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    minKillSpeed: 10
+    minKillSpeed: 11
     maxKillSpeed: 10000
     radiusScale: 1
     collidesWith:
@@ -13888,7 +13888,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -1235602530
+  randomSeed: -1948158937
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -19840,7 +19840,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    minKillSpeed: 10
+    minKillSpeed: 11
     maxKillSpeed: 10000
     radiusScale: 1
     collidesWith:
@@ -23246,7 +23246,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    minKillSpeed: 10
+    minKillSpeed: 11
     maxKillSpeed: 10000
     radiusScale: 1
     collidesWith:
@@ -24122,7 +24122,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 2045719437
+  randomSeed: 783376362
   InitialModule:
     serializedVersion: 3
     enabled: 1
