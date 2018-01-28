@@ -7,16 +7,17 @@ public class DogManager : MonoBehaviour {
 	public enum Action
 	{
 		NOTHING,
-		BARK,
-		WALK
+		GOTO_PLAYER
 	};
 
-	Action action = Action.NOTHING;
+	Action action = Action.GOTO_PLAYER;
 
 	AudioSource audio;
 	public List<AudioClip> audioList;
 
   AIFollowTargetOnCommand followBehavior;
+
+	float timerBark = 0.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -47,11 +48,11 @@ public class DogManager : MonoBehaviour {
 		{
 		case Action.NOTHING:
 			break;
-		case Action.BARK:
-			audio.PlayOneShot (audioList[0]);
-			break;
-		case Action.WALK:
+		case Action.GOTO_PLAYER:
+			//foot step sound
 			audio.PlayOneShot (audioList[1]);
+			//add target to follow player
+			//this.GetComponent<AIFollowTargetInRange>().enabled = true;
 			break;
 
 		}
@@ -62,16 +63,60 @@ public class DogManager : MonoBehaviour {
 	{
 		if(input.myType == SoundProjector.ProjectorType.whistle)
 		{
-			SetAction(Action.BARK);
-			SetAction(Action.WALK);
-
-			//input.transform.position
+			SetAction(Action.GOTO_PLAYER);
+			timerBark = 2.5f;
 		}
+	}
+
+	void BarkAndLight()
+	{
+		//bark
+		audio.PlayOneShot (audioList[0]);
+		//light on
+		SendSignal(SoundProjector.ProjectorType.bark, 360, Vector2.zero);
+		GetComponent<Echo> ().SpawnParticleSystem (this.transform.position, 360, 0);
+	}
+
+	void OnTriggerEnter2D(Collider2D other) 
+	{
+		MonsterManager monster = other.gameObject.GetComponent<MonsterManager>();
+		if(monster != null) 
+		{
+			//we've collided with a monster, we're dead!
+			//TODO: verify or modify death condition
+			//for right now, one-hit death is okay
+			//SetAction(Action.DIED);
+		}
+	}
+
+	public void SendSignal(SoundProjector.ProjectorType type, float arc, Vector2 direction)
+	{
+
+		float angle = SoundProjector.GetFullAngle(direction);
+
+		GameObject temp = new GameObject();
+
+		temp.transform.position = this.transform.position;
+		temp.transform.rotation = this.transform.rotation;
+
+		SoundProjector proj = temp.AddComponent<SoundProjector>();
+		proj.Project(type,angle,arc);
+
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+
+		if(action == Action.GOTO_PLAYER)
+		{
+			timerBark += Time.deltaTime;
+
+			if(timerBark > 3.0f)
+			{
+				timerBark = 0.0f;
+				BarkAndLight ();
+			}
+		}
 	}
 }

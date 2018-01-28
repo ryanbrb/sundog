@@ -106,6 +106,24 @@
      <Compile Include="Assets\ASSETS\Tazo_fx\Script\BillBoard.cs" />
      <Compile Include="Assets\ASSETS\Tazo_fx\Script\tazo_rotate.cs" />
      <Compile Include="Assets\ASSETS\Tazo_fx\Script\tazo_UVScroller.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUI.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIButton.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIData.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIImage.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUISlider.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIText.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\DontDestroy.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\EventSystemChecker.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\MenuObject.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\MenuSettings.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\Pause.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\PlayMusic.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\QuitApplication.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\SetAudioLevels.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\ShowPanels.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\StartOptions.cs" />
+     <Compile Include="Assets\Scripts\AIPathing\AIFollowTargetInRange.cs" />
+     <Compile Include="Assets\Scripts\AIPathing\AIFollowTargetOnCommand.cs" />
      <Compile Include="Assets\Scripts\AIPathing\AINodePathing.cs" />
      <Compile Include="Assets\Scripts\AIPathing\AIRandomWalk.cs" />
      <Compile Include="Assets\Scripts\BoardUIController.cs" />
@@ -120,13 +138,17 @@
      <Compile Include="Assets\Scripts\ParticleDestruct.cs" />
      <Compile Include="Assets\Scripts\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\RadarDish.cs" />
+     <Compile Include="Assets\Scripts\ReflectorSettings.cs" />
      <None Include="Assets\Anima2D\Examples\Shaders\VisibleInsideMask.shader" />
      <None Include="Assets\Anima2D\Examples\Shaders\VisibleOutsideMask.shader" />
      <None Include="Assets\Anima2D\Version.txt" />
+     <None Include="Assets\Game Jam Template\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\Anima2D\Examples\Shaders\Unlit-Alpha-Cull-off.shader" />
      <None Include="Assets\Anima2D\Licenses.txt" />
      <None Include="Assets\Anima2D\Examples\Shaders\VertexLitOneDirectional.shader" />
      <None Include="Assets\Anima2D\Readme.txt" />
+     <None Include="Assets\Game Jam Template\GameJamTemplateReadMe.txt" />
+     <None Include="Assets\Game Jam Template\README.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity2017/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
