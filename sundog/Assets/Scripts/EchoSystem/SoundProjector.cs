@@ -94,25 +94,7 @@ public class SoundProjector : MonoBehaviour {
         ProjectCircle(transform.position);
         spot.spotAngle = GetSpotAngle();
         spot.intensity = Intensity * 40;
-        switch (myType)
-        {
-            case ProjectorType.bark:
-                spot.color = new Color(1, 0.75f, 127 /256, 1);
-                break;
-            case ProjectorType.whistle:
-                spot.color = Color.magenta;
-                break;
-            case ProjectorType.stomp:
-                spot.color = Color.blue;
-                break;
-            case ProjectorType.click:
-                spot.color = Color.green;
-                break;
-            default:
-                Debug.Log(myType);
-                spot.color = Color.red;
-                break;
-        }
+  
     }
 
     float GetSpotAngle()

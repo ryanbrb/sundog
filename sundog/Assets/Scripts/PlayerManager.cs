@@ -76,9 +76,10 @@ public class PlayerManager : MonoBehaviour
     MonsterManager monster = other.gameObject.GetComponent<MonsterManager>();
     if(monster != null) 
     {
-      //we've collided with a monster, we're dead!
-      //TODO: verify or modify death condition
-      //for right now, one-hit death is okay
+            //we've collided with a monster, we're dead!
+            //TODO: verify or modify death condition
+            //for right now, one-hit death is okay
+            monster.KillPlayer();
       SetAction(Action.DIED);
     }
     bool bIsVictoryVolume = other.gameObject.name.Equals("ExitVictoryVolume");

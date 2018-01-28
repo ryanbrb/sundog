@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 114652176096246122}
   - component: {fileID: 114651657749236592}
   - component: {fileID: 58180919955805282}
+  - component: {fileID: 114662702903032486}
   m_Layer: 0
   m_Name: Monster 1
   m_TagString: Untagged
@@ -197,6 +198,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Range: 20
+--- !u!114 &114662702903032486
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729810433707032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b6ff38e4bac04f469e7ed7b91204227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 6
+  radius: 0
+  height: 0
+  particleSystem: {fileID: 1264455181868106, guid: 11e07be4eacd72f4aae0ecff116c63a4,
+    type: 2}
 --- !u!114 &114852605156240872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -246,7 +263,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 6846f354836ab2e429c2e40e5a4cc0ca, type: 2}
+  - {fileID: 2100000, guid: 37e3288087986b0498cfd86dcb900a88, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

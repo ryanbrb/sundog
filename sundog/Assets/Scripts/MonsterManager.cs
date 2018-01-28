@@ -17,16 +17,27 @@ public class MonsterManager : MonoBehaviour {
 	AudioSource audio;
 	public List<AudioClip> audioList;
 
-	// Use this for initialization
-	void Start () {
+    Animator myAnimator;
+    Transform child;
+
+    // Use this for initialization
+    void Start () {
 		audio = GetComponent<AudioSource> ();
 	
 		if(GetComponent<Reflector> () == null)
 		{
 			gameObject.AddComponent<Reflector> ();
 		}
-			
-	}
+
+        myAnimator = GetComponentInChildren<Animator>();
+        child = transform.GetChild(0);
+
+    }
+
+    public void KillPlayer()
+    {
+
+    }
 
 	public void SetAction(Action newAction)
 	{
@@ -37,15 +48,28 @@ public class MonsterManager : MonoBehaviour {
 		switch(newAction)
 		{
 		case Action.NOTHING:
+                if(myAnimator != null)
+                {
+                    myAnimator.SetBool("IsMoving", false);
+                }
 			GM.GetComponent<GameManager>().SwitchGameEvent(GameManager.GameEvent.NOTHING);
 			break;
 		case Action.DISCOVERED:
-			audio.PlayOneShot (audioList [0]);
+                if (myAnimator != null)
+                {
+                    myAnimator.SetBool("IsMoving", true);
+                }
+               
+                audio.PlayOneShot (audioList [0]);
 			PM.GetComponent<PlayerManager> ().SetState (PlayerManager.State.PANIC);
 			//audio.loop = false;
 			break;
 		case Action.ATTACK:
-			timerScream = 15.0f;
+                if (myAnimator != null)
+                {
+                    myAnimator.SetBool("IsMoving", true);
+                }
+                timerScream = 15.0f;
 			newRandomTimeToScream = Random.Range (timerScream, 30.0f);
 			GM.GetComponent<GameManager>().SwitchGameEvent(GameManager.GameEvent.ATTACK);
 			PM.GetComponent<PlayerManager> ().SetState (PlayerManager.State.ATTACKED);
@@ -62,7 +86,37 @@ public class MonsterManager : MonoBehaviour {
 		SetAction(Action.DISCOVERED);
 	}
 
-	float timerScream = 0.0f;
+
+    void Roar()
+    {
+        //bark
+        if(myAnimator != null)
+        myAnimator.SetTrigger("Attack");
+        audio.PlayOneShot(audioList[0]);
+        //light on
+        SendSignal(SoundProjector.ProjectorType.monster, 360, Vector2.zero);
+
+        GetComponent<Echo>().SpawnParticleSystem(this.transform.position, 360, 0);
+
+    }
+
+    public void SendSignal(SoundProjector.ProjectorType type, float arc, Vector2 direction)
+    {
+
+        float angle = SoundProjector.GetFullAngle(direction);
+
+        GameObject temp = new GameObject();
+
+        temp.transform.position = this.transform.position;
+        //temp.transform.rotation = this.transform.rotation;
+
+        SoundProjector proj = temp.AddComponent<SoundProjector>();
+        proj.Project(type, angle, arc);
+
+
+    }
+
+    float timerScream = 0.0f;
 	float newRandomTimeToScream = 0.0f;
 	// Update is called once per frame
 	void Update () {
@@ -73,9 +127,12 @@ public class MonsterManager : MonoBehaviour {
 			if(timerScream > newRandomTimeToScream)
 			{
 				timerScream = 0.0f;
-				newRandomTimeToScream = Random.Range (15.0f, 30.0f);
+   
+
+                newRandomTimeToScream = Random.Range (15.0f, 30.0f);
 				audio.PlayOneShot (audioList [1]);
 			}
 		}
-	}
+        child.eulerAngles = new Vector3(0, 0, 0);
+    }
 }
