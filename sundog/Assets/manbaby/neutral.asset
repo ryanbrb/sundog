@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: neutral
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: body
+    localPosition: {x: 0.10170436, y: -0.03634131, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.9017835, w: 0.43218815}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: body/head
+    localPosition: {x: 0.9408383, y: -0.00000011920929, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.03798073, w: 0.99927855}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: body/rupperarm
+    localPosition: {x: 0.5359859, y: 0.8044598, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.9565037, w: 0.29172036}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: body/rupperarm/rforearm
+    localPosition: {x: 0.3820163, y: 0.00000035762787, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.6413901, w: 0.76721495}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: body/larm
+    localPosition: {x: -0.6680535, y: -0.8533976, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.8462772, w: 0.5327429}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: body/larm/lhand
+    localPosition: {x: 0.3214544, y: -0.000000059604645, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.29772103, w: 0.95465297}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: body/lleg
+    localPosition: {x: -1.1155558, y: -0.53169346, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9997391, w: 0.022841988}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: body/lleg/lfoot
+    localPosition: {x: 0.28773177, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.22993532, w: 0.9732059}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: body/rleg
+    localPosition: {x: -0.47905597, y: 0.7086418, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.99937296, w: -0.035407417}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: body/rleg/rfoot
+    localPosition: {x: 0.33411688, y: -0, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.25359672, w: 0.9673101}
+    localScale: {x: 1, y: 1, z: 1}
