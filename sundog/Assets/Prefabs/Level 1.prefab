@@ -571,6 +571,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1134976609359342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4488042295398530}
+  m_Layer: 0
+  m_Name: MONSTER_Location5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1144110588493760
 GameObject:
   m_ObjectHideFlags: 1
@@ -603,6 +618,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1161136614779886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4641959740577982}
+  - component: {fileID: 212506131095976168}
+  m_Layer: 0
+  m_Name: circle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1167068455087998
 GameObject:
   m_ObjectHideFlags: 1
@@ -617,6 +648,22 @@ GameObject:
   - component: {fileID: 114620214225647048}
   m_Layer: 9
   m_Name: ReflectingWall (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1169965602322222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4098738526251654}
+  - component: {fileID: 212570539158473702}
+  m_Layer: 0
+  m_Name: circle (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -794,6 +841,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1274258463051028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4543941939783644}
+  - component: {fileID: 212996771283604334}
+  m_Layer: 0
+  m_Name: circle (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1277645791751982
 GameObject:
   m_ObjectHideFlags: 1
@@ -808,6 +871,21 @@ GameObject:
   - component: {fileID: 114279186199397984}
   m_Layer: 9
   m_Name: ReflectingWall (27)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1289405000695176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4917113407196070}
+  m_Layer: 0
+  m_Name: DOG_Location4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -883,6 +961,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1311276554246542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4238049455977934}
+  - component: {fileID: 212041943646849070}
+  m_Layer: 0
+  m_Name: circle (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1315308328852184
 GameObject:
   m_ObjectHideFlags: 1
@@ -916,6 +1010,21 @@ GameObject:
   - component: {fileID: 114326408253450188}
   m_Layer: 9
   m_Name: ReflectingWall (74)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1345087789593156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4831945181520112}
+  m_Layer: 0
+  m_Name: DOG_Location2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1083,6 +1192,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1375524687872704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4089646416622094}
+  m_Layer: 0
+  m_Name: MONSTER_Location1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1375674044274300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4087246666353082}
+  m_Layer: 0
+  m_Name: MONSTER_Location7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1419151900591158
 GameObject:
   m_ObjectHideFlags: 1
@@ -1151,6 +1290,21 @@ GameObject:
   - component: {fileID: 65349844142335280}
   m_Layer: 9
   m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1445842530699458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4502677084088542}
+  m_Layer: 0
+  m_Name: DOG_Location3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1291,6 +1445,21 @@ GameObject:
   - component: {fileID: 114994831895519982}
   m_Layer: 9
   m_Name: ReflectingWall (20)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1477825720449882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4912347184611850}
+  m_Layer: 0
+  m_Name: DOG_Location1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1502,6 +1671,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1541145472069794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4122050927357336}
+  - component: {fileID: 212583926031795984}
+  m_Layer: 0
+  m_Name: circle (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1544252651001620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1516,6 +1701,37 @@ GameObject:
   - component: {fileID: 64143140234607996}
   m_Layer: 0
   m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1547928742117590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4951907133188672}
+  m_Layer: 0
+  m_Name: MONSTER_Location3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1553237389585268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4409762199101162}
+  - component: {fileID: 212498579383075966}
+  m_Layer: 0
+  m_Name: circle (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1572,6 +1788,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1560260373782706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4323500927324278}
+  - component: {fileID: 212459394531689458}
+  m_Layer: 0
+  m_Name: circle (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1561684983984408
 GameObject:
   m_ObjectHideFlags: 1
@@ -1583,6 +1815,22 @@ GameObject:
   - component: {fileID: 65635192853227722}
   m_Layer: 9
   m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1568814193511374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4003180389757412}
+  - component: {fileID: 212669252103225224}
+  m_Layer: 0
+  m_Name: circle (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2141,6 +2389,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1710435935333740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4138697582116860}
+  m_Layer: 0
+  m_Name: MONSTER_Location2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1710838890492948
 GameObject:
   m_ObjectHideFlags: 1
@@ -2262,6 +2525,37 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1767841333897800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4313491238031896}
+  - component: {fileID: 212386952780055468}
+  m_Layer: 0
+  m_Name: circle (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1781297305759038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4022059351223584}
+  m_Layer: 0
+  m_Name: MONSTER_Location6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1788029209452728
 GameObject:
   m_ObjectHideFlags: 1
@@ -2362,6 +2656,22 @@ GameObject:
   - component: {fileID: 65035327331552422}
   m_Layer: 9
   m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1813182788677598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4751714610407900}
+  - component: {fileID: 212499744028720694}
+  m_Layer: 0
+  m_Name: circle (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2717,6 +3027,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1984511809535202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4779428738330440}
+  m_Layer: 0
+  m_Name: MONSTER_Location4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1992564846888918
 GameObject:
   m_ObjectHideFlags: 1
@@ -2755,6 +3080,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &4003180389757412
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1568814193511374}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -47.28, y: -10.800001, z: -0.00999999}
+  m_LocalScale: {x: 0.5800002, y: 2.1100008, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4020795923790194
 Transform:
   m_ObjectHideFlags: 1
@@ -2783,6 +3121,19 @@ Transform:
   m_Father: {fileID: 4355710337236998}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!4 &4022059351223584
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781297305759038}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: -23.950005, y: 24.6, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4027377203541440
 Transform:
   m_ObjectHideFlags: 1
@@ -2790,11 +3141,32 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1490314148523756}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 44.1, y: 24.6, z: 0}
+  m_LocalPosition: {x: 44.1, y: 24.6, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4174147270336156}
   - {fileID: 4355710337236998}
+  - {fileID: 4912347184611850}
+  - {fileID: 4831945181520112}
+  - {fileID: 4502677084088542}
+  - {fileID: 4917113407196070}
+  - {fileID: 4089646416622094}
+  - {fileID: 4138697582116860}
+  - {fileID: 4951907133188672}
+  - {fileID: 4779428738330440}
+  - {fileID: 4488042295398530}
+  - {fileID: 4022059351223584}
+  - {fileID: 4087246666353082}
+  - {fileID: 4641959740577982}
+  - {fileID: 4323500927324278}
+  - {fileID: 4543941939783644}
+  - {fileID: 4751714610407900}
+  - {fileID: 4122050927357336}
+  - {fileID: 4313491238031896}
+  - {fileID: 4003180389757412}
+  - {fileID: 4098738526251654}
+  - {fileID: 4238049455977934}
+  - {fileID: 4409762199101162}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
@@ -2932,6 +3304,32 @@ Transform:
   m_Father: {fileID: 4561997253553142}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4087246666353082
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1375674044274300}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: -45.800003, y: 12.6, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4089646416622094
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1375524687872704}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: 41.059998, y: -13.370001, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4095659981460432
 Transform:
   m_ObjectHideFlags: 1
@@ -2945,6 +3343,19 @@ Transform:
   m_Father: {fileID: 4118902694819320}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4098738526251654
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1169965602322222}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -30.830002, y: 16.59, z: -0.00999999}
+  m_LocalScale: {x: 0.5800002, y: 2.1100008, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4105646323095408
 Transform:
   m_ObjectHideFlags: 1
@@ -2984,6 +3395,19 @@ Transform:
   - {fileID: 4095659981460432}
   m_Father: {fileID: 4355710337236998}
   m_RootOrder: 70
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!4 &4122050927357336
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1541145472069794}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -1.3800011, y: -10.83, z: -0.00999999}
+  m_LocalScale: {x: 0.5800002, y: 2.1100008, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4123266671044982
 Transform:
@@ -3025,6 +3449,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4708670615296738}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4138697582116860
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1710435935333740}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: -37.24, y: -15.3, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4158142309590122
 Transform:
@@ -3217,6 +3654,19 @@ Transform:
   m_Father: {fileID: 4355710337236998}
   m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!4 &4238049455977934
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1311276554246542}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 20.659998, y: -4.3099995, z: -0.00999999}
+  m_LocalScale: {x: 0.5800002, y: 2.1100008, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4240236894348562
 Transform:
   m_ObjectHideFlags: 1
@@ -3381,6 +3831,19 @@ Transform:
   m_Father: {fileID: 4355710337236998}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!4 &4313491238031896
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1767841333897800}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 1.2599983, y: 5.5200005, z: -0.00999999}
+  m_LocalScale: {x: 0.5800002, y: 2.1100008, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4314608134031070
 Transform:
   m_ObjectHideFlags: 1
@@ -3420,6 +3883,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4841369614936288}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4323500927324278
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1560260373782706}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: 14.059998, y: 9.650001, z: -0.00999999}
+  m_LocalScale: {x: 0.58, y: 2.11, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4331713076953058
 Transform:
@@ -3685,6 +4161,19 @@ Transform:
   m_Father: {fileID: 4808052853079154}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4409762199101162
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1553237389585268}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 38.37, y: -4.3099995, z: -0.00999999}
+  m_LocalScale: {x: 0.5800002, y: 2.1100008, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4415080899971398
 Transform:
   m_ObjectHideFlags: 1
@@ -3845,6 +4334,19 @@ Transform:
   m_Father: {fileID: 4342843629189408}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4488042295398530
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1134976609359342}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: 33.6, y: 4.64, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4492386196720446
 Transform:
   m_ObjectHideFlags: 1
@@ -3884,6 +4386,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4428058093137770}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4502677084088542
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1445842530699458}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: 14.83, y: 21.48, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4510800560119564
 Transform:
@@ -3951,6 +4466,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4858175265671392}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4543941939783644
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1274258463051028}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: -17.760002, y: 7.970001, z: -0.00999999}
+  m_LocalScale: {x: 0.58, y: 2.11, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4561997253553142
 Transform:
@@ -4128,6 +4656,19 @@ Transform:
   m_Father: {fileID: 4355710337236998}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!4 &4641959740577982
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1161136614779886}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: 27.689999, y: 25.75, z: -0.00999999}
+  m_LocalScale: {x: 0.58, y: 2.11, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4655119722648052
 Transform:
   m_ObjectHideFlags: 1
@@ -4317,6 +4858,19 @@ Transform:
   m_Father: {fileID: 4355710337236998}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4751714610407900
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1813182788677598}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: 3.5999985, y: -18.319998, z: -0.00999999}
+  m_LocalScale: {x: 0.58, y: 2.11, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4762940161347868
 Transform:
   m_ObjectHideFlags: 1
@@ -4383,6 +4937,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4452817135516322}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4779428738330440
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1984511809535202}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: -19.45, y: -15.879999, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4779514000192434
 Transform:
@@ -4588,6 +5155,19 @@ Transform:
   m_Father: {fileID: 4355710337236998}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!4 &4831945181520112
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1345087789593156}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: 22.909998, y: -12.059999, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4838065811576232
 Transform:
   m_ObjectHideFlags: 1
@@ -4762,6 +5342,32 @@ Transform:
   m_Father: {fileID: 4635697661141910}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4912347184611850
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1477825720449882}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: -6.61, y: 21.65, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4917113407196070
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1289405000695176}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: -39.160004, y: 4.960001, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4918204506916092
 Transform:
   m_ObjectHideFlags: 1
@@ -4856,6 +5462,19 @@ Transform:
   m_Father: {fileID: 4355710337236998}
   m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!4 &4951907133188672
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1547928742117590}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: -8.25, y: -2.459999, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4027377203541440}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4961219812617110
 Transform:
   m_ObjectHideFlags: 1
@@ -11026,16 +11645,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114008310593598522
 MonoBehaviour:
@@ -11050,16 +11665,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114009185848530416
 MonoBehaviour:
@@ -11074,16 +11685,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114015887707436346
 MonoBehaviour:
@@ -11098,16 +11705,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114068308445359540
 MonoBehaviour:
@@ -11122,16 +11725,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114075024704973692
 MonoBehaviour:
@@ -11146,16 +11745,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114080197816628600
 MonoBehaviour:
@@ -11170,16 +11765,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114082341004517886
 MonoBehaviour:
@@ -11194,16 +11785,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114093412487264972
 MonoBehaviour:
@@ -11218,16 +11805,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114095010484177022
 MonoBehaviour:
@@ -11242,16 +11825,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114117909028426526
 MonoBehaviour:
@@ -11266,16 +11845,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114147838126980228
 MonoBehaviour:
@@ -11290,16 +11865,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114150504321694732
 MonoBehaviour:
@@ -11314,16 +11885,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114156144926595926
 MonoBehaviour:
@@ -11338,16 +11905,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114179418410669408
 MonoBehaviour:
@@ -11362,16 +11925,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114185750028025618
 MonoBehaviour:
@@ -11386,16 +11945,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114233069152377462
 MonoBehaviour:
@@ -11410,16 +11965,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114239647832611740
 MonoBehaviour:
@@ -11434,16 +11985,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114249834597301206
 MonoBehaviour:
@@ -11458,16 +12005,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114250300036279296
 MonoBehaviour:
@@ -11482,16 +12025,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114262372285062604
 MonoBehaviour:
@@ -11506,16 +12045,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114266282752285952
 MonoBehaviour:
@@ -11530,16 +12065,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114279186199397984
 MonoBehaviour:
@@ -11554,16 +12085,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114282620121196718
 MonoBehaviour:
@@ -11578,16 +12105,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114299745992276358
 MonoBehaviour:
@@ -11602,16 +12125,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114316156830306214
 MonoBehaviour:
@@ -11626,16 +12145,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114326408253450188
 MonoBehaviour:
@@ -11650,16 +12165,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114343489271808486
 MonoBehaviour:
@@ -11674,16 +12185,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114370450257488944
 MonoBehaviour:
@@ -11698,16 +12205,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114378707734490452
 MonoBehaviour:
@@ -11722,16 +12225,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114384577047577262
 MonoBehaviour:
@@ -11746,16 +12245,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114398472658857492
 MonoBehaviour:
@@ -11770,16 +12265,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114420747198786142
 MonoBehaviour:
@@ -11794,16 +12285,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114439849153572904
 MonoBehaviour:
@@ -11818,16 +12305,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114446853438718040
 MonoBehaviour:
@@ -11842,16 +12325,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114468527546960838
 MonoBehaviour:
@@ -11866,16 +12345,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114479393508611842
 MonoBehaviour:
@@ -11890,16 +12365,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114488435007810364
 MonoBehaviour:
@@ -11914,16 +12385,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114529531126324136
 MonoBehaviour:
@@ -11938,16 +12405,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114530782334949322
 MonoBehaviour:
@@ -11962,16 +12425,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114535494269129830
 MonoBehaviour:
@@ -11986,16 +12445,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114557137438730724
 MonoBehaviour:
@@ -12010,16 +12465,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114568632854748636
 MonoBehaviour:
@@ -12034,16 +12485,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114572338447687030
 MonoBehaviour:
@@ -12058,16 +12505,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114573198665186794
 MonoBehaviour:
@@ -12082,16 +12525,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114588786421932132
 MonoBehaviour:
@@ -12106,16 +12545,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114592976040788402
 MonoBehaviour:
@@ -12130,16 +12565,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114602501183225922
 MonoBehaviour:
@@ -12154,16 +12585,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114612727794420946
 MonoBehaviour:
@@ -12178,16 +12605,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114620214225647048
 MonoBehaviour:
@@ -12202,16 +12625,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114622969267170896
 MonoBehaviour:
@@ -12226,16 +12645,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114646312564613910
 MonoBehaviour:
@@ -12250,16 +12665,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114655146488061514
 MonoBehaviour:
@@ -12274,16 +12685,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114658176721541306
 MonoBehaviour:
@@ -12298,16 +12705,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114682893362002982
 MonoBehaviour:
@@ -12322,16 +12725,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114693044179137066
 MonoBehaviour:
@@ -12346,16 +12745,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114715807683855058
 MonoBehaviour:
@@ -12370,16 +12765,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114742348548502392
 MonoBehaviour:
@@ -12394,16 +12785,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114751258906473482
 MonoBehaviour:
@@ -12418,16 +12805,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114753880365000124
 MonoBehaviour:
@@ -12442,16 +12825,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114764029143062020
 MonoBehaviour:
@@ -12471,7 +12850,7 @@ MonoBehaviour:
   m_LayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_UseGeometry: 0
+  m_UseGeometry: 1
   m_DefaultArea: 0
   m_IgnoreNavMeshAgent: 1
   m_IgnoreNavMeshObstacle: 1
@@ -12480,7 +12859,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.1
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: a1491df80c2b39e4393704151b23071a, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 46defed16dd52734ea7c054a1820cd0b, type: 2}
 --- !u!114 &114764400531092952
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12494,16 +12873,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114777904802035042
 MonoBehaviour:
@@ -12518,16 +12893,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114788172312213532
 MonoBehaviour:
@@ -12542,16 +12913,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114824833699307484
 MonoBehaviour:
@@ -12566,16 +12933,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114887697319312598
 MonoBehaviour:
@@ -12590,16 +12953,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114893850744951694
 MonoBehaviour:
@@ -12614,16 +12973,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114902371168080298
 MonoBehaviour:
@@ -12638,16 +12993,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114904252925295294
 MonoBehaviour:
@@ -12662,16 +13013,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114906163152459694
 MonoBehaviour:
@@ -12686,16 +13033,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114926073924349842
 MonoBehaviour:
@@ -12710,16 +13053,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114933894919771330
 MonoBehaviour:
@@ -12734,16 +13073,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114946474730035588
 MonoBehaviour:
@@ -12758,16 +13093,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114948245217997924
 MonoBehaviour:
@@ -12782,16 +13113,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114951422829136170
 MonoBehaviour:
@@ -12806,16 +13133,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114965205633649982
 MonoBehaviour:
@@ -12830,16 +13153,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114965788798204766
 MonoBehaviour:
@@ -12854,16 +13173,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
 --- !u!114 &114994831895519982
 MonoBehaviour:
@@ -12878,14 +13193,450 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout: 0
   collidedSounds: []
-  effect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  barkEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce, type: 2}
-  clickEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  stompEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  whistleEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
-  monsterEffect: {fileID: 1264455181868106, guid: aec6ada0138ee7b449a7d5bdf12953ce,
-    type: 2}
+  effect: {fileID: 0}
+  barkEffect: {fileID: 0}
+  clickEffect: {fileID: 0}
+  stompEffect: {fileID: 0}
+  whistleEffect: {fileID: 0}
+  monsterEffect: {fileID: 0}
   minimumIntensity: 0.1
+--- !u!212 &212041943646849070
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1311276554246542}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b0747ad17da590b44a9d2f236649cba8, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.05, y: 2.05}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!212 &212386952780055468
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1767841333897800}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b0747ad17da590b44a9d2f236649cba8, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.05, y: 2.05}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!212 &212459394531689458
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1560260373782706}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b0747ad17da590b44a9d2f236649cba8, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.05, y: 2.05}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!212 &212498579383075966
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1553237389585268}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b0747ad17da590b44a9d2f236649cba8, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.05, y: 2.05}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!212 &212499744028720694
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1813182788677598}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b0747ad17da590b44a9d2f236649cba8, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.05, y: 2.05}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!212 &212506131095976168
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1161136614779886}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b0747ad17da590b44a9d2f236649cba8, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.05, y: 2.05}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!212 &212570539158473702
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1169965602322222}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b0747ad17da590b44a9d2f236649cba8, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.05, y: 2.05}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!212 &212583926031795984
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1541145472069794}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b0747ad17da590b44a9d2f236649cba8, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.05, y: 2.05}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!212 &212669252103225224
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1568814193511374}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b0747ad17da590b44a9d2f236649cba8, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.05, y: 2.05}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!212 &212996771283604334
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1274258463051028}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b0747ad17da590b44a9d2f236649cba8, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.05, y: 2.05}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
