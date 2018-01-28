@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: pose
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: root
+    localPosition: {x: 0.614385, y: 1.2718331, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.99836457, w: -0.057168286}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root/spine
+    localPosition: {x: 0.33470604, y: -0.000000029802322, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.3043845, w: 0.9525493}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root/spine/head
+    localPosition: {x: 0.49108195, y: -0.000000014901161, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.5089435, w: -0.8607999}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root/spine/R_upper_arm
+    localPosition: {x: -0.21177402, y: -0.06862183, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.93137383, w: 0.36406428}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root/spine/R_upper_arm/R_arm
+    localPosition: {x: 0.8200003, y: -0.00000011920929, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.39478472, w: 0.91877365}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root/spine/L_upper_arm
+    localPosition: {x: 0.898431, y: 0.4304929, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.7991332, w: 0.601154}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root/spine/L_upper_arm/L_Arm
+    localPosition: {x: 0.8500005, y: -0.00000029802322, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.32676715, w: 0.9451049}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root/R_thigh
+    localPosition: {x: -0.39325538, y: 0.048597306, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.7996454, w: 0.6004725}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root/R_thigh/R_foot
+    localPosition: {x: 0.6695124, y: 0.00000017881393, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.23229168, w: 0.9726462}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root/L_thigh
+    localPosition: {x: 0.3176919, y: -0.044921987, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.61821544, w: 0.7860087}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root/L_thigh/L_foot
+    localPosition: {x: 0.6365365, y: -0.00000011920929, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: root/tail
+    localPosition: {x: -0.4070075, y: -0.2490105, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.91360927, w: -0.40659332}
+    localScale: {x: 1, y: 1, z: 1}
