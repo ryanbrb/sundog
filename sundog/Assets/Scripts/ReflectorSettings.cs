@@ -58,7 +58,7 @@ public class ReflectorSettings : MonoBehaviour {
         bool bIsShortPiece = (reflectorInstance.transform.localScale.x < shortMaximumXThreshold);
         bool bisMediumPiece = (reflectorInstance.transform.localScale.x < mediumMaximumXThreshold);
         bool bIsLongPiece = (reflectorInstance.transform.localScale.x < longMaximumXThreshold);
-        bool bIsExtraLongPiece = (bIsShortPiece || bisMediumPiece || bIsLongPiece) ? true : false;
+        bool bIsExtraLongPiece = (bIsShortPiece || bisMediumPiece || bIsLongPiece) ? false : true;
 
         if(bIsShortPiece) 
         {
