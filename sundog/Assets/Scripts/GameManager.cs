@@ -5,14 +5,16 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+  //General States for the whole game
+  enum GameState 
+  {
+    GS_GAMEPLAY,
+    GS_ENTER_DEATH,         //this fades into the deat
+    GS_DEATH,               //black screen
+    GS_RESPAWN_FROM_DEATH,  //fade back to game
+  };
 
-	//  enum GameState
-	//  {
-	//    GS_GAMEPLAY,
-	//    GS_DEATH,
-	//  };
-
-	enum GameEvent
+  enum GameEvent
 	{
 		NOTHING,
 		ATTACK,
@@ -21,9 +23,17 @@ public class GameManager : MonoBehaviour
 	;
 
 	GameEvent ge = GameEvent.NOTHING;
-	//  GameState gs = GameState.GS_GAMEPLAY;
+	GameState gs = GameState.GS_GAMEPLAY;
 
-	public GameObject Player;
+  //UI related
+  public Canvas DeathStateCanvas;
+  public float fadeToBlackTime = 0.25f;
+  public float deathIdleTime = 2.0f;
+  public float fadeToRespawnFromDeath = 0.25f;
+
+  float m_fStateTimer;
+
+  public GameObject Player;
 
 	public List<DogManager> Dogs;
 	public List<MonsterManager> Monsters;
@@ -82,6 +92,8 @@ public class GameManager : MonoBehaviour
 		SpawnPlayer ();
 		SpawnAllDogs ();
 		SpawnAllMonsters ();
+
+    ClearDeathScreen();
 	}
 
 	void SpawnPlayer ()
@@ -163,56 +175,152 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-	//  void SwitchGameState(GameState newState)
-	//  {
-	//    switch(newState)
-	//    {
-	//      case GameState.GS_GAMEPLAY:
-	//      {
-	//          //reset gameplay
-	//          SpawnAllMonsters(true);
-	//      }
-	//      break;
-	//
-	//      case GameState.GS_DEATH:
-	//      {
-	//        //here we should spawn some kind of Screen fade effect.
-	//      }
-	//      break;
-	//    }
-	//
-	//    gs = newState;
-	//  }
-	//
-	//  void UpdateGameState()
-	//  {
-	//    switch(gs)
-	//    {
-	//      case GameState.GS_GAMEPLAY:
-	//      {
-	//          //check to see if the player has died
-	//          bool bPlayerDied = false;
-	//          if (bPlayerDied)
-	//          {
-	//            SwitchGameState(GameState.GS_DEATH);
-	//          }
-	//      }
-	//      break;
-	//
-	//      case GameState.GS_DEATH:
-	//      {
-	//          //check to see if death sequence is over
-	//          bool bDeathSequenceOver = true;
-	//          if(bDeathSequenceOver)
-	//          {
-	//            SwitchGameState(GameState.GS_GAMEPLAY);
-	//          }
-	//      }
-	//      break;
-	//    }
-	//  }
+  void ClearDeathScreen(bool bEnableRendering = false) 
+  {
+    if (DeathStateCanvas == null)
+      return;
 
-	void SwitchGameEvent (GameEvent newGE)
+    CanvasGroup canvasGroupComponent = DeathStateCanvas.GetComponent<CanvasGroup>();
+    if (canvasGroupComponent != null) 
+    {
+      canvasGroupComponent.alpha = 0.0f;
+    }
+
+    DeathStateCanvas.enabled = bEnableRendering;
+  }
+
+  void SetDeathScreenAlphaFade(float newAlpha) 
+  {
+    if (DeathStateCanvas == null)
+      return;
+
+    CanvasGroup canvasGroupComponent = DeathStateCanvas.GetComponent<CanvasGroup>();
+    if (canvasGroupComponent != null) 
+    {
+      canvasGroupComponent.alpha = newAlpha;
+    }
+  }
+
+  void SwitchGameState(GameState newState) {
+    switch (newState) {
+      case GameState.GS_GAMEPLAY: 
+      {
+        //reset gameplay
+        ClearDeathScreen(false);
+        SpawnAllMonsters(true);          
+      }
+      break;
+
+      case GameState.GS_ENTER_DEATH: 
+      {
+        m_fStateTimer = fadeToBlackTime;
+        ClearDeathScreen(true);
+      }
+      break;
+
+      case GameState.GS_DEATH: 
+      {
+        //here we should spawn some kind of Screen fade effect.
+        m_fStateTimer = deathIdleTime;
+      }
+      break;
+
+      case GameState.GS_RESPAWN_FROM_DEATH: 
+      {
+        //cleanup should happen here
+        m_fStateTimer = fadeToRespawnFromDeath;
+        
+      }
+      break;
+    }
+
+    gs = newState;
+  }
+
+  void UpdateGameState() 
+  {
+    switch (gs) 
+    {
+      case GameState.GS_GAMEPLAY: 
+      {
+        //check to see if the player has died
+        bool bPlayerDied = false;          
+
+        if (bPlayerDied) 
+        {
+          SwitchGameState(GameState.GS_ENTER_DEATH);
+        }
+      }
+      break;
+
+      case GameState.GS_ENTER_DEATH: 
+      {
+        m_fStateTimer -= Time.deltaTime;
+        if (m_fStateTimer <= 0.0f) 
+        {
+          SwitchGameState(GameState.GS_DEATH);
+        } 
+        else 
+        {
+          float newAlphaValue;
+          if (fadeToBlackTime <= 0.0f) 
+          {
+            newAlphaValue = 0.0f;
+          } 
+          else 
+          {
+            newAlphaValue = 1.0f - (m_fStateTimer / fadeToBlackTime);
+          }
+
+          SetDeathScreenAlphaFade(newAlphaValue);
+        }
+      }
+      break;
+
+      case GameState.GS_DEATH: 
+      {
+        //check to see if death sequence is over
+        bool bDeathSequenceOver = false;
+        m_fStateTimer -= Time.deltaTime;
+        if (m_fStateTimer <= 0.0f)
+          bDeathSequenceOver = true;
+
+        if (bDeathSequenceOver) 
+        {
+          SwitchGameState(GameState.GS_RESPAWN_FROM_DEATH);
+        }
+      }
+      break;
+
+      case GameState.GS_RESPAWN_FROM_DEATH: 
+      {
+        //fade death screen back to game
+        m_fStateTimer -= Time.deltaTime;
+        if (m_fStateTimer <= 0.0f) 
+        {
+          SetDeathScreenAlphaFade(0.0f);
+          SwitchGameState(GameState.GS_GAMEPLAY);
+        } 
+        else 
+        {
+          float newAlphaValue;
+          if (fadeToRespawnFromDeath <= 0.0f) 
+          {
+            newAlphaValue = 0.0f;
+          } 
+          else 
+          {
+            newAlphaValue = (m_fStateTimer / fadeToRespawnFromDeath);
+          }
+
+          SetDeathScreenAlphaFade(newAlphaValue);
+        }
+      }
+      break;
+    }
+  }
+
+  void SwitchGameEvent (GameEvent newGE)
 	{
 		switch (newGE) {
 		case GameEvent.NOTHING:
@@ -236,6 +344,6 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		//UpdateGameState();
+		UpdateGameState();
 	}
 }
