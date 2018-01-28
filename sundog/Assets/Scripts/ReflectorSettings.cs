@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ReflectorSettings : MonoBehaviour {
 
-  public float tinyMaximumTreshold = 0.25f;
+  public float tinyMaximumTreshold = 1f;
   public float shortMaximumXThreshold = 5.0f;
   public float mediumMaximumXThreshold = 10.0f;
   public float longMaximumXThreshold = 20.0f;
@@ -61,13 +61,21 @@ public class ReflectorSettings : MonoBehaviour {
       if(reflectorInstance.name.Contains("ReflectingWall")) 
       {
         //this may or may not use the local scale
-        bool bIsTinyPiece = (reflectorInstance.transform.localScale.x < shortMaximumXThreshold);
+        bool bIsTinyPiece = (reflectorInstance.transform.localScale.x < tinyMaximumTreshold);
         bool bIsShortPiece = (reflectorInstance.transform.localScale.x < shortMaximumXThreshold);
         bool bisMediumPiece = (reflectorInstance.transform.localScale.x < mediumMaximumXThreshold);
         bool bIsLongPiece = (reflectorInstance.transform.localScale.x < longMaximumXThreshold);
         bool bIsExtraLongPiece = (bIsShortPiece || bisMediumPiece || bIsLongPiece) ? false : true;
 
-        if(bIsShortPiece) 
+        if (bIsTinyPiece)
+        {
+            if (tinyClickPrefab != null) { reflectorInstance.clickEffect = tinyClickPrefab; }
+            if (tinyWhistlePrefab != null) { reflectorInstance.whistleEffect = tinyWhistlePrefab; }
+            if (tinyStompPrefab != null) { reflectorInstance.stompEffect = tinyStompPrefab; }
+            if (tinyBarkPrefab != null) { reflectorInstance.barkEffect = tinyBarkPrefab; }
+            if (tinyMonsterPrefab != null) { reflectorInstance.monsterEffect = tinyMonsterPrefab; }
+        }
+        else if (bIsShortPiece) 
         {
           if (shortClickPrefab != null) { reflectorInstance.clickEffect = shortClickPrefab; }
           if (shortWhistlePrefab != null) { reflectorInstance.whistleEffect = shortWhistlePrefab; }
