@@ -114,8 +114,9 @@ public class EchoSystem : MonoBehaviour
                 scaleEcho = Vector2.Distance(posMouseBeforeScale, pos);
 
                 float arc = 360-((scaleEcho / 6)*360);
+                arc = Mathf.Max(arc, 15);
 
-				if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.whistle) {
+                if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.whistle) {
 
                     echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, arc, SoundProjector.GetFullAngle(orientationEcho));
                     SendSignal(SoundProjector.ProjectorType.whistle, arc, orientationEcho);
@@ -143,7 +144,7 @@ public class EchoSystem : MonoBehaviour
 
     public void SendSignal(SoundProjector.ProjectorType type, float arc, Vector2 direction)
     {
-  
+        
         float angle = SoundProjector.GetFullAngle(direction);
        
         GameObject temp = new GameObject();

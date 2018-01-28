@@ -13,8 +13,6 @@ public class Echo : MonoBehaviour {
 
     public void SpawnParticleSystem(Vector3 position, float arc, float angle)
     {
-        
-
         float adjustedAngle = (angle != 0)? (angle - 90) + (arc / 2) : 0;
 
         Vector3 rotator = new Vector3(0, 0, 0 - adjustedAngle);
@@ -26,8 +24,6 @@ public class Echo : MonoBehaviour {
 
         ParticleSystem[] fxl = newParticle.GetComponentsInChildren<ParticleSystem>();
 
-        
-
         foreach (ParticleSystem fx in fxl)
         {
             if (fx.shape.enabled)
@@ -36,9 +32,9 @@ public class Echo : MonoBehaviour {
                 tempShape.arc = arc;
             }
         }
+        
 
-        
-        
+        newParticle.SetActive(true);
     }
 
 	// Use this for initialization
