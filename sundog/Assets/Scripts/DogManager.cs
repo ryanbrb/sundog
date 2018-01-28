@@ -74,9 +74,14 @@ public class DogManager : MonoBehaviour {
 			timerBark = 6.0f;
 			newRandomTimeToBark = Random.Range (timerBark, 10.0f);
 			SetAction(Action.GOTO_PLAYER);
-            BarkAndLight();
+          
         }
 	}
+
+    void Discovered()
+    {
+        BarkAndLight();
+    }
 
 	void BarkAndLight()
 	{

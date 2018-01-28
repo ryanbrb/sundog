@@ -16,7 +16,7 @@ public class Reflector : MonoBehaviour {
     public GameObject monsterEffect;
 
     public float minimumIntensity = 0.3f;
-
+    bool unknown = true;
     private void Start()
     {
         collidedSounds = new List<SoundProjector>();
@@ -33,7 +33,11 @@ public class Reflector : MonoBehaviour {
             collidedSounds.Add(input);
             if (input.GetIntensity() > minimumIntensity)
             {
-                SendMessage("Discovered", SendMessageOptions.DontRequireReceiver);
+                if (unknown)
+                {
+                    unknown = false;
+                    SendMessage("Discovered", SendMessageOptions.DontRequireReceiver);
+                }
                 SendMessage("EchoMessage", input, SendMessageOptions.DontRequireReceiver);
                 
                 return true;

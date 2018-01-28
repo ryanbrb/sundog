@@ -21,6 +21,7 @@ public class EchoSystem : MonoBehaviour
 	float timerScrollWheel = 0.0f;
 
 	public GameObject arrow;
+    SoundProjector lastProjector;
 
 	// Use this for initialization
 	void Start ()
@@ -142,16 +143,16 @@ public class EchoSystem : MonoBehaviour
                     if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.whistle)
                     {
 
-                        echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, arc, SoundProjector.GetFullAngle(orientationEcho));
-                        SendSignal(SoundProjector.ProjectorType.whistle, arc, orientationEcho);
+                        echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, 30, SoundProjector.GetFullAngle(orientationEcho));
+                        SendSignal(SoundProjector.ProjectorType.whistle, 30, orientationEcho);
 						// STOMP WRISTLE
 						this.GetComponentInParent<PlayerManager>().SetAction(PlayerManager.Action.WRISTLE);
 
                     }
                     else if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.click)
                     {
-                        echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, arc, SoundProjector.GetFullAngle(orientationEcho));
-                        SendSignal(SoundProjector.ProjectorType.click, arc, orientationEcho);
+                        echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, 60, SoundProjector.GetFullAngle(orientationEcho));
+                        SendSignal(SoundProjector.ProjectorType.click, 60, orientationEcho);
 						// STOMP CLICK
 						this.GetComponentInParent<PlayerManager>().SetAction(PlayerManager.Action.CLICK);
                     }
@@ -174,17 +175,20 @@ public class EchoSystem : MonoBehaviour
 
     public void SendSignal(SoundProjector.ProjectorType type, float arc, Vector2 direction)
     {
-        
-        float angle = SoundProjector.GetFullAngle(direction);
-       
-        GameObject temp = new GameObject();
 
-        temp.transform.position = this.transform.position;
-        temp.transform.rotation = this.transform.rotation;
+        if (lastProjector == null)
+        {
+            float angle = SoundProjector.GetFullAngle(direction);
 
-        SoundProjector proj = temp.AddComponent<SoundProjector>();
-        proj.Project(type,angle,arc);
+            GameObject temp = new GameObject();
 
+            temp.transform.position = this.transform.position;
+            temp.transform.rotation = this.transform.rotation;
+
+            SoundProjector proj = temp.AddComponent<SoundProjector>();
+            proj.Project(type, angle, arc);
+            lastProjector = proj;
+        }
 
     }
 }
