@@ -36,8 +36,8 @@ public class Reflector : MonoBehaviour {
             collidedSounds.Add(input);
             if (input.GetIntensity() > minimumIntensity)
             {
+                SendMessage("Discovered", SendMessageOptions.DontRequireReceiver);
                 GameObject temp = Instantiate(effect);
-
                 temp.transform.position = this.transform.position;
                 temp.transform.rotation = this.transform.rotation;
 
