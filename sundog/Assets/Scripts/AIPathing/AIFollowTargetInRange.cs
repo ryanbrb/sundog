@@ -19,6 +19,8 @@ public class AIFollowTargetInRange : MonoBehaviour
 
 	;
 
+	public bool iAmChasingThePlayer = false;
+
 	//member variables
 	NavMeshAgent m_agent;
 	AIRandomWalk m_randomWalkComponent;
@@ -47,6 +49,13 @@ public class AIFollowTargetInRange : MonoBehaviour
 		switch (newState) {
 		case FollowTargetState.FTS_SEARCH: 
 			{
+//				if(!boolbool)
+//				{
+//					this.GetComponentInParent<MonsterManager> ().SetAction(MonsterManager.Action.NOTHING);
+//					boolbool = true;
+//				}
+				iAmChasingThePlayer = false;
+
 				m_fStateTimer = LineOfSightCheckFrequency;
 				//if you're searching, go about your normal behavior
 				if (m_randomWalkComponent != null) {
@@ -60,6 +69,13 @@ public class AIFollowTargetInRange : MonoBehaviour
 
 		case FollowTargetState.FTS_GO_TO_TARGET: 
 			{
+//				if(boolbool)
+//				{
+//					this.GetComponentInParent<MonsterManager> ().SetAction(MonsterManager.Action.ATTACK);
+//					boolbool = false;
+//				}
+				iAmChasingThePlayer = true;
+
 				m_fStateTimer = LineOfSightCheckFrequencyDuringFollow;
 				//if we've found a target we are no longer
 				//interested in our previous behavior
@@ -93,6 +109,7 @@ public class AIFollowTargetInRange : MonoBehaviour
 			if (hit.collider != null) {
 				if (hit.collider.gameObject == targetGameObject) {
 					//we've found the target, let's see if it's within range
+
 					outDistance = hit.distance;
 					bResult = true;
 					break;
