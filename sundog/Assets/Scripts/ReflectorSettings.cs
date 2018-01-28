@@ -75,7 +75,7 @@ public class ReflectorSettings : MonoBehaviour {
             if (tinyBarkPrefab != null) { reflectorInstance.barkEffect = tinyBarkPrefab; }
             if (tinyMonsterPrefab != null) { reflectorInstance.monsterEffect = tinyMonsterPrefab; }
         }
-        else if (bIsShortPiece) 
+        /*else if (bIsShortPiece) 
         {
           if (shortClickPrefab != null) { reflectorInstance.clickEffect = shortClickPrefab; }
           if (shortWhistlePrefab != null) { reflectorInstance.whistleEffect = shortWhistlePrefab; }
@@ -108,7 +108,7 @@ public class ReflectorSettings : MonoBehaviour {
           if (extraLongStompPrefab != null) { reflectorInstance.stompEffect = extraLongStompPrefab; }
           if (extraLongBarkPrefab != null) { reflectorInstance.barkEffect = extraLongBarkPrefab; }
           if (extraLongMonsterPrefab != null) { reflectorInstance.monsterEffect = extraLongMonsterPrefab; }
-        }
+        }*/
       }
     }
   }
