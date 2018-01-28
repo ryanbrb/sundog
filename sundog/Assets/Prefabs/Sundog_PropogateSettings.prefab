@@ -51,15 +51,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c686801d784d8b4488bde3adff4cd5b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tinyMaximumTreshold: 1
   shortMaximumXThreshold: 5
   mediumMaximumXThreshold: 10
   longMaximumXThreshold: 20
-  shortClickPrefab: {fileID: 0}
+  tinyClickPrefab: {fileID: 1264455181868106, guid: fce9cd456dc9eb74b9da57ac147b92ad,
+    type: 2}
+  shortClickPrefab: {fileID: 1264455181868106, guid: c9530945d10d52d498fe3eb75931b5c1,
+    type: 2}
   mediumClickPrefab: {fileID: 1264455181868106, guid: 0e221f970f797c347adc8d56fa57239f,
     type: 2}
   longClickPrefab: {fileID: 1264455181868106, guid: c32f5fd742592ab4eb2393d46828d58d,
     type: 2}
   extraLongClickPrefab: {fileID: 1264455181868106, guid: c668fb8c2beb8d74ead03337a77a824e,
+    type: 2}
+  tinyWhistlePrefab: {fileID: 1264455181868106, guid: 301ebe1058189f54ea7eeea41deeddef,
     type: 2}
   shortWhistlePrefab: {fileID: 1264455181868106, guid: 3cc6e809a79fa004cb37aa71a3a74ec7,
     type: 2}
@@ -69,6 +75,8 @@ MonoBehaviour:
     type: 2}
   extraLongWhistlePrefab: {fileID: 1264455181868106, guid: dfdfee383f98a554caa52395a0a51e5f,
     type: 2}
+  tinyStompPrefab: {fileID: 1264455181868106, guid: 562e560947e45ea4d90c0227e59fd0f3,
+    type: 2}
   shortStompPrefab: {fileID: 1264455181868106, guid: d4b8580995019ba4e822d80d4919daee,
     type: 2}
   mediumStompPrefab: {fileID: 1264455181868106, guid: 5954118a62b6d3c40b31a2420b6ff5d8,
@@ -77,6 +85,8 @@ MonoBehaviour:
     type: 2}
   extraLongStompPrefab: {fileID: 1264455181868106, guid: 4260c4275d1766941ab1e17b93703a8a,
     type: 2}
+  tinyBarkPrefab: {fileID: 1264455181868106, guid: 5d3caac2c1c950f40b01baf579285b9d,
+    type: 2}
   shortBarkPrefab: {fileID: 1264455181868106, guid: 6bdd223e7a563ba4f8ad7fda5d155420,
     type: 2}
   mediumBarkPrefab: {fileID: 1264455181868106, guid: bc9ca672d51ec594bb0e607823a52b36,
@@ -84,6 +94,8 @@ MonoBehaviour:
   longBarkPrefab: {fileID: 1264455181868106, guid: d49eeb14962d3ef45b4f235484e0201b,
     type: 2}
   extraLongBarkPrefab: {fileID: 1264455181868106, guid: 3391ecc1cb217224091a7e545a2beba8,
+    type: 2}
+  tinyMonsterPrefab: {fileID: 1264455181868106, guid: 064fe4638f3fd9946a960caf60dc8eee,
     type: 2}
   shortMonsterPrefab: {fileID: 1264455181868106, guid: a3139d25ec89a5749ad188875a4da66f,
     type: 2}
