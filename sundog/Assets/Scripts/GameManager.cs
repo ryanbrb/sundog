@@ -24,13 +24,12 @@ public class GameManager : MonoBehaviour
 		//but where do we go after victory?
 	};
 
-	enum GameEvent
+	public enum GameEvent
 	{
 		NOTHING,
 		ATTACK,
-		GAME_OVER}
-
-	;
+		GAME_OVER
+	};
 
 	GameEvent ge = GameEvent.NOTHING;
 	GameState gs = GameState.GS_GAMEPLAY;
@@ -103,6 +102,25 @@ public class GameManager : MonoBehaviour
 		}
 
     
+	}
+
+	public void SwitchGameEvent (GameEvent newGE)
+	{
+		switch (newGE) {
+		case GameEvent.NOTHING:
+			//player mode nothing
+			AmbientAudio.PlayOneShot (audioList [0]);
+			break;
+
+		case GameEvent.ATTACK:
+			AmbientAudio.PlayOneShot (audioList [1]);
+			break;
+
+		case GameEvent.GAME_OVER:
+			SceneManager.LoadScene ("LEVEL1", LoadSceneMode.Single);
+			break;
+		}
+		ge = newGE;
 	}
 
 	void InitGame (bool bDestroyOldInstances = false)
@@ -475,24 +493,7 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-	void SwitchGameEvent (GameEvent newGE)
-	{
-		switch (newGE) {
-		case GameEvent.NOTHING:
-			//player mode nothing
-			AmbientAudio.PlayOneShot (audioList [0]);
-			break;
 
-		case GameEvent.ATTACK:
-			AmbientAudio.PlayOneShot (audioList [1]);
-			break;
-
-		case GameEvent.GAME_OVER:
-			SceneManager.LoadScene ("LEVEL1", LoadSceneMode.Single);
-			break;
-		}
-		ge = newGE;
-	}
 
 
 	

@@ -37,7 +37,7 @@ public class PlayerManager : MonoBehaviour
 
     Collider2D col;
 
-    public float speed = 10.0f;
+    public float speed = 3.0f;
 	// Use this for initialization
 	void Start ()
 	{

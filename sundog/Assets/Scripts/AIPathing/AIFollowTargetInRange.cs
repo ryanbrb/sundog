@@ -51,7 +51,7 @@ public class AIFollowTargetInRange : MonoBehaviour
 				//if you're searching, go about your normal behavior
 				if (m_randomWalkComponent != null) {
 					m_randomWalkComponent.enabled = true;
-					if(this.gameObject.tag == "monster")				{
+					if(this.gameObject.tag != "dog")				{
 						this.GetComponentInParent<MonsterManager> ().SetAction(MonsterManager.Action.NOTHING);
 					}
 				}
@@ -66,7 +66,7 @@ public class AIFollowTargetInRange : MonoBehaviour
 				if (m_randomWalkComponent != null) {
 					m_randomWalkComponent.enabled = false;
 				}
-				if(this.gameObject.tag == "monster")				{
+				if(this.gameObject.tag != "dog")			{
 					this.GetComponentInParent<MonsterManager> ().SetAction(MonsterManager.Action.ATTACK);
 				}
 					
@@ -138,7 +138,9 @@ public class AIFollowTargetInRange : MonoBehaviour
 					if (HasLineOfSightTowardsTarget (ref outDistance)) {
 						bUpdateTargetPosition = true;
 						m_fStateTimer = LineOfSightCheckFrequencyDuringFollow;
-					} else {
+					} 
+					else 
+					{
 						SwitchState (FollowTargetState.FTS_SEARCH);
 					
 					}
