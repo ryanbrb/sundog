@@ -39,28 +39,30 @@ public class Reflector : MonoBehaviour {
                 switch (input.myType)
                 {
                     case SoundProjector.ProjectorType.bark:
-                        temp = Instantiate(barkEffect);
+                        temp = barkEffect;
                         break;
                     case SoundProjector.ProjectorType.click:
-                        temp = Instantiate(clickEffect);
+                        temp = clickEffect;
                         break;
                     case SoundProjector.ProjectorType.whistle:
-                        temp = Instantiate(whistleEffect);
+                        temp = whistleEffect;
                         break;
                     case SoundProjector.ProjectorType.stomp:
-                        temp = Instantiate(stompEffect);
+                        temp = stompEffect;
                         break;
                     case SoundProjector.ProjectorType.monster:
-                        temp = Instantiate(monsterEffect);
+                        temp = monsterEffect;
                         break;
                     default:
-                        temp =Instantiate(effect);
+                        temp = effect;
                         break;
                 }
-
-                temp.transform.position = this.transform.position;
-                temp.transform.rotation = this.transform.rotation;
-
+                if (temp != null)
+                {
+                    temp = Instantiate(temp);
+                    temp.transform.position = this.transform.position;
+                    temp.transform.rotation = this.transform.rotation;
+                }
                 return true;
             }
            
