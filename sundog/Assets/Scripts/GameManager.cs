@@ -87,18 +87,43 @@ public class GameManager : MonoBehaviour
     
 	}
 
-	void InitGame ()
+	void InitGame (bool bDestroyOldInstances = false)
 	{
 		SpawnPlayer ();
-		SpawnAllDogs ();
-		SpawnAllMonsters ();
+		SpawnAllDogs (bDestroyOldInstances);
+		SpawnAllMonsters (bDestroyOldInstances);
 
     ClearDeathScreen();
 	}
 
+  void DestroyAllNonPlayers() 
+  {
+    //delete all of the existing monsters if there are any
+    int numberOfActiveMonsters = Monsters.Count;
+    for (int i = numberOfActiveMonsters - 1; i >= 0; --i) {
+      Destroy(Monsters[i]);
+    }
+    Monsters.Clear();
+
+    //delete all of the existing monsters if there are any
+    int numberOfActiveDogs = Dogs.Count;
+    for (int i = numberOfActiveDogs - 1; i >= 0; --i) {
+      Destroy(Dogs[i]);
+    }
+    Dogs.Clear();
+  }
+
 	void SpawnPlayer ()
 	{
-		GameObject _player = Instantiate (Player, Vector2.zero, Quaternion.identity);
+    //Destroy old player first if they exist
+    PlayerManager[] playerManagers = GameObject.FindObjectsOfType<PlayerManager>();
+    int numberOfPlayersInLevel = playerManagers.Length;
+    for(int i = numberOfPlayersInLevel - 1; i >= 0; --i) 
+    {
+      Destroy(playerManagers[i]);
+    }
+
+    GameObject _player = Instantiate (Player, Vector2.zero, Quaternion.identity);
 	}
 
 	//this will delete all existing dogs
@@ -222,6 +247,10 @@ public class GameManager : MonoBehaviour
       {
         //here we should spawn some kind of Screen fade effect.
         m_fStateTimer = deathIdleTime;
+
+        //it's okay to destroy everything else now since our full screen
+        //effect should be blocking our view from the level
+        DestroyAllNonPlayers();
       }
       break;
 
@@ -229,6 +258,7 @@ public class GameManager : MonoBehaviour
       {
         //cleanup should happen here
         m_fStateTimer = fadeToRespawnFromDeath;
+        InitGame(true);
         
       }
       break;
@@ -244,7 +274,16 @@ public class GameManager : MonoBehaviour
       case GameState.GS_GAMEPLAY: 
       {
         //check to see if the player has died
-        bool bPlayerDied = false;          
+        bool bPlayerDied = false;
+        PlayerManager[] playerManagers = GameObject.FindObjectsOfType<PlayerManager>();
+        if (playerManagers.Length > 0) 
+        {
+          PlayerManager playerManagerInstance = playerManagers[0].gameObject.GetComponent<PlayerManager>();
+          if(playerManagerInstance != null) 
+          {
+              bPlayerDied = playerManagerInstance.IsDead();
+          }
+        }
 
         if (bPlayerDied) 
         {

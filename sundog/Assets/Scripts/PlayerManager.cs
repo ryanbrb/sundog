@@ -48,11 +48,14 @@ public class PlayerManager : MonoBehaviour
             rb.gravityScale = 0;
         }
 
-        col =  GetComponent<Collider2D>();
-        if(col)
-        {
-            col = gameObject.AddComponent<CircleCollider2D>();
-        }
+        //removed temporarily because CircleCollider2D was added to the player prefab
+        //this was doubling up on the Colliders, the collider on the prefab was easier
+        //to adjust as needed to get trigger collision working (kmartinez)
+        //col =  GetComponent<Collider2D>();
+        //if(col)
+        //{
+        //    col = gameObject.AddComponent<CircleCollider2D>();
+        //}
 
 //
 //		//Stomp
@@ -74,6 +77,23 @@ public class PlayerManager : MonoBehaviour
 //
 
 	}
+  
+  public bool IsDead() 
+  {
+    return (action == Action.DIED);
+  }
+
+  void OnTriggerEnter2D(Collider2D other) 
+  {
+    MonsterManager monster = other.gameObject.GetComponent<MonsterManager>();
+    if(monster != null) 
+    {
+      //we've collided with a monster, we're dead!
+      //TODO: verify or modify death condition
+      //for right now, one-hit death is okay
+      SetAction(Action.DIED);
+    }
+  }
 
 	public void SetState (State newState)
 	{
