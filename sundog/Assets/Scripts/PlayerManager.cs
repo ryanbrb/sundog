@@ -107,22 +107,8 @@ public class PlayerManager : MonoBehaviour
 
         rb.MovePosition(newPosition);
 
-        /*
-		if (Input.GetKey (KeyCode.Z)) {
-			this.transform.Translate (Vector3.up * Time.deltaTime, Space.World);
-		}
-
-		if (Input.GetKey (KeyCode.S)) {
-			this.transform.Translate (-Vector3.up * Time.deltaTime, Space.World);
-		}
-
-		if (Input.GetKey (KeyCode.D)) {
-			this.transform.Translate (Vector3.right * Time.deltaTime, Space.World);
-		}
-
-		if (Input.GetKey (KeyCode.Q)) {
-			this.transform.Translate (-Vector3.right * Time.deltaTime, Space.World);
-		}
-        */
+        Vector3 cameraPosition = this.transform.position;
+        cameraPosition.z = -10;
+        Camera.main.transform.position = cameraPosition;
 	}
 }
