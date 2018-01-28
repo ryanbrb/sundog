@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,9 +10,14 @@ public class GameManager : MonoBehaviour
   enum GameState 
   {
     GS_GAMEPLAY,
+
     GS_ENTER_DEATH,         //this fades into the deat
     GS_DEATH,               //black screen
     GS_RESPAWN_FROM_DEATH,  //fade back to game
+
+    GS_ENTER_VICTORY,
+    GS_VICTORY,
+    GS_VICTORY_EXIT,        //but where do we go after victory?
   };
 
   enum GameEvent
@@ -27,11 +33,19 @@ public class GameManager : MonoBehaviour
 
   //UI related
   public Canvas DeathStateCanvas;
+  public Canvas VictoryStateCanvas;
+
   public float fadeToBlackTime = 0.25f;
   public float deathIdleTime = 2.0f;
   public float fadeToRespawnFromDeath = 0.25f;
 
+  public float fadeToWhiteTime = 1.0f;
+  public float victoryIdleTime = 7.0f;
+  public float secondsPerVictoryMessageCharacter = 0.15f;
+  string victoryMessage = "You've made it out!";
+
   float m_fStateTimer;
+  int m_iStateIndex;
 
   public GameObject Player;
 
@@ -94,6 +108,7 @@ public class GameManager : MonoBehaviour
 		SpawnAllMonsters (bDestroyOldInstances);
 
     ClearDeathScreen();
+    ClearVictoryScreen();
 	}
 
   void DestroyAllNonPlayers() 
@@ -226,12 +241,55 @@ public class GameManager : MonoBehaviour
     }
   }
 
+  void ClearVictoryScreen(bool bEnableRendering = false) {
+    if (VictoryStateCanvas == null)
+      return;
+
+    CanvasGroup canvasGroupComponent = VictoryStateCanvas.GetComponent<CanvasGroup>();
+    if (canvasGroupComponent != null) {
+      canvasGroupComponent.alpha = 0.0f;
+    }
+
+    VictoryStateCanvas.enabled = bEnableRendering;
+  }
+
+  void SetVictoryScreenAlphaFade(float newAlpha) {
+    if (VictoryStateCanvas == null)
+      return;
+
+    CanvasGroup canvasGroupComponent = VictoryStateCanvas.GetComponent<CanvasGroup>();
+    if (canvasGroupComponent != null) {
+      canvasGroupComponent.alpha = newAlpha;
+    }
+  }
+
+  void SetVictoryText(string newText) 
+  {
+    if (VictoryStateCanvas == null)
+      return;
+
+    Transform imageTransform = VictoryStateCanvas.transform.Find("Image");
+    if (imageTransform == null)
+      return;
+
+    Transform textTransform = imageTransform.Find("Text");
+    if (textTransform == null)
+      return;
+
+    Text UI_text = textTransform.gameObject.GetComponent<Text>();
+    if (UI_text == null)
+      return;
+
+    UI_text.text = newText;
+  }
+
   void SwitchGameState(GameState newState) {
     switch (newState) {
       case GameState.GS_GAMEPLAY: 
       {
         //reset gameplay
         ClearDeathScreen(false);
+        ClearVictoryScreen(false);
         SpawnAllMonsters(true);          
       }
       break;
@@ -262,6 +320,27 @@ public class GameManager : MonoBehaviour
         
       }
       break;
+
+      case GameState.GS_ENTER_VICTORY: 
+      {
+          m_fStateTimer = fadeToWhiteTime;
+          ClearVictoryScreen(true);
+          //it would be great if we could pause all of the game here
+      }
+      break;
+
+      case GameState.GS_VICTORY: 
+      {
+          m_fStateTimer = secondsPerVictoryMessageCharacter;
+          m_iStateIndex = -1;
+      }
+      break;
+
+      case GameState.GS_VICTORY_EXIT: 
+      {
+          //we should load the title screen or the game again.
+      }
+      break;
     }
 
     gs = newState;
@@ -273,21 +352,29 @@ public class GameManager : MonoBehaviour
     {
       case GameState.GS_GAMEPLAY: 
       {
-        //check to see if the player has died
         bool bPlayerDied = false;
+        bool bFulfilledVictory = false;
+
+        //check to see if the player has died
         PlayerManager[] playerManagers = GameObject.FindObjectsOfType<PlayerManager>();
         if (playerManagers.Length > 0) 
         {
           PlayerManager playerManagerInstance = playerManagers[0].gameObject.GetComponent<PlayerManager>();
           if(playerManagerInstance != null) 
           {
-              bPlayerDied = playerManagerInstance.IsDead();
+            bPlayerDied = playerManagerInstance.IsDead();
           }
         }
 
         if (bPlayerDied) 
         {
           SwitchGameState(GameState.GS_ENTER_DEATH);
+        }
+
+        //TODO: check to see if victory conditions have been fulfilled        
+        if(!bPlayerDied && bFulfilledVictory) 
+        {
+          SwitchGameState(GameState.GS_ENTER_VICTORY);
         }
       }
       break;
@@ -354,6 +441,64 @@ public class GameManager : MonoBehaviour
 
           SetDeathScreenAlphaFade(newAlphaValue);
         }
+      }
+      break;
+
+      case GameState.GS_ENTER_VICTORY: 
+      {
+          m_fStateTimer -= Time.deltaTime;
+          if (m_fStateTimer <= 0.0f) 
+          {
+            SwitchGameState(GameState.GS_VICTORY);
+          } 
+          else 
+          {
+            float newAlphaValue;
+            if (fadeToBlackTime <= 0.0f) 
+            {
+              newAlphaValue = 0.0f;
+            } 
+            else 
+            {
+              newAlphaValue = 1.0f - (m_fStateTimer / fadeToBlackTime);
+            }
+
+            SetVictoryScreenAlphaFade(newAlphaValue);
+          }
+        }
+      break;
+
+      case GameState.GS_VICTORY:
+      {
+          //let's fudge with the text
+          m_fStateTimer -= Time.deltaTime;
+          if(m_fStateTimer <= 0.0f) 
+          {
+            m_fStateTimer = secondsPerVictoryMessageCharacter;
+            m_iStateIndex++;
+          }
+
+          string outputMessage = "";
+          char[] outputMessageStr = new char[32];
+
+          if (m_iStateIndex < victoryMessage.Length)
+          {
+            //copy the string if we have a 0 or greater, otherwise we
+            //want to display the default empty string.
+            if (m_iStateIndex >= 0) 
+            {
+              victoryMessage.CopyTo(0, outputMessageStr, 0, m_iStateIndex);
+              outputMessage = new string(outputMessageStr);
+            }
+          } 
+          else
+          {
+            outputMessage = victoryMessage;
+
+            //TODO: wait a bit, then
+            //go to title screen or go back to game.
+          }
+          SetVictoryText(outputMessage);
       }
       break;
     }
