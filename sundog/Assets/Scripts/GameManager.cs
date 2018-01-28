@@ -98,7 +98,7 @@ public class GameManager : MonoBehaviour {
     }
 
     //spawn monsters at all spawn locations
-    for(int i = 0; i <= numberOfSpawnLocations; ++i) 
+    for(int i = 0; i < numberOfSpawnLocations; ++i) 
     {
       GameObject monsterGameObject = Instantiate(MonsterPrefab, MonsterSpawnPositions[i].position, MonsterSpawnPositions[i].rotation);
       Monsters.Add(monsterGameObject.GetComponent<MonsterManager>());
