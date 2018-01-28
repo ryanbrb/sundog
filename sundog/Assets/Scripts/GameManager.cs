@@ -363,6 +363,7 @@ public class GameManager : MonoBehaviour
           if(playerManagerInstance != null) 
           {
             bPlayerDied = playerManagerInstance.IsDead();
+            bFulfilledVictory = playerManagerInstance.HasReachedEndOfLevel();
           }
         }
 
@@ -371,7 +372,7 @@ public class GameManager : MonoBehaviour
           SwitchGameState(GameState.GS_ENTER_DEATH);
         }
 
-        //TODO: check to see if victory conditions have been fulfilled        
+        //This could be separated out better, for edge cases.     
         if(!bPlayerDied && bFulfilledVictory) 
         {
           SwitchGameState(GameState.GS_ENTER_VICTORY);

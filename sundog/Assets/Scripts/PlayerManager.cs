@@ -25,7 +25,9 @@ public class PlayerManager : MonoBehaviour
 		STOMP
 	};
 
-	State state = State.NO_STATE;
+  bool bReachedEndOfLevel = false;
+
+  State state = State.NO_STATE;
 	Action action = Action.NOTHING;
 
 	AudioSource audio;
@@ -83,6 +85,11 @@ public class PlayerManager : MonoBehaviour
     return (action == Action.DIED);
   }
 
+  public bool HasReachedEndOfLevel() 
+  {
+    return bReachedEndOfLevel;
+  }
+
   void OnTriggerEnter2D(Collider2D other) 
   {
     MonsterManager monster = other.gameObject.GetComponent<MonsterManager>();
@@ -92,6 +99,11 @@ public class PlayerManager : MonoBehaviour
       //TODO: verify or modify death condition
       //for right now, one-hit death is okay
       SetAction(Action.DIED);
+    }
+    bool bIsVictoryVolume = other.gameObject.name.Equals("ExitVictoryVolume");
+    if(bIsVictoryVolume) 
+    {
+      bReachedEndOfLevel = true;
     }
   }
 
