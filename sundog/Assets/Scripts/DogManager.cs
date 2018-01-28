@@ -16,6 +16,8 @@ public class DogManager : MonoBehaviour {
 	AudioSource audio;
 	public List<AudioClip> audioList;
 
+  AIFollowTargetOnCommand followBehavior;
+
 	// Use this for initialization
 	void Start () {
 		audio = GetComponent<AudioSource> ();
@@ -23,9 +25,23 @@ public class DogManager : MonoBehaviour {
 		{
 			gameObject.AddComponent<Reflector> ();
 		}
-	}
 
-	public void SetAction(Action newAction)
+    //adding follow behavior if it hasn't been added
+    followBehavior = GetComponent<AIFollowTargetOnCommand>();
+    if(followBehavior == null) 
+    {
+      followBehavior = gameObject.AddComponent<AIFollowTargetOnCommand>();
+    }
+
+    //immediately disable the follow behavior until we need it.
+    if(followBehavior != null) 
+    {
+      followBehavior.enabled = false;
+    }
+   
+  }
+
+  public void SetAction(Action newAction)
 	{
 		switch(newAction)
 		{
