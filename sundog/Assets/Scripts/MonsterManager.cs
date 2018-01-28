@@ -44,13 +44,7 @@ public class MonsterManager : MonoBehaviour {
 		} 
 		action = newAction;
 	}
-
-	void PlayAudioFromGameManager(int i)
-	{
-		audio.PlayOneShot (audioList[i]);
-		audio.Play ();
-
-	}
+		
 
 	public void Discovered()
 	{

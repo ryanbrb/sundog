@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
@@ -33,7 +35,7 @@ public class PlayerManager : MonoBehaviour
 
     Collider2D col;
 
-    public float speed = 3;
+    public float speed = 5.0f;
 	// Use this for initialization
 	void Start ()
 	{
@@ -51,6 +53,25 @@ public class PlayerManager : MonoBehaviour
         {
             col = gameObject.AddComponent<CircleCollider2D>();
         }
+
+//
+//		//Stomp
+//		SendSignal(SoundProjector.ProjectorType.stomp, 360, Vector2.up);
+//	}
+//
+//	public void SendSignal(SoundProjector.ProjectorType type, float arc, Vector2 direction)
+//	{
+//
+//		float angle = SoundProjector.GetFullAngle(direction);
+//
+//		GameObject temp = new GameObject();
+//
+//		temp.transform.position = this.transform.position;
+//		temp.transform.rotation = this.transform.rotation;
+//
+//		SoundProjector proj = temp.AddComponent<SoundProjector>();
+//		proj.Project(type,angle,arc);
+//
 
 	}
 
@@ -118,5 +139,6 @@ public class PlayerManager : MonoBehaviour
         Vector3 cameraPosition = this.transform.position;
         cameraPosition.z = -10;
         Camera.main.transform.position = cameraPosition;
+
 	}
 }
