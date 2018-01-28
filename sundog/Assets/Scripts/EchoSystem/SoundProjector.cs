@@ -101,8 +101,7 @@ public class SoundProjector : MonoBehaviour {
         Debug.DrawLine(transform.position, compareposition,Color.yellow);
         Vector3 compareDirection = (compareposition - this.transform.position);
         float diff =  Vector3.Angle(Vector3.forward, compareDirection);
-        
-        Debug.Log(diff);
+       
 
         return diff*1.5f;
     }

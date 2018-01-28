@@ -33,7 +33,7 @@ public class PlayerManager : MonoBehaviour
 
     Collider2D col;
 
-    public float speed;
+    public float speed = 3;
 	// Use this for initialization
 	void Start ()
 	{
@@ -111,7 +111,7 @@ public class PlayerManager : MonoBehaviour
 
         float Vert = Input.GetAxis("Vertical") ;
 
-        Vector2 newPosition = transform.position + (new Vector3(Hoz, Vert) * Time.deltaTime);
+        Vector2 newPosition = transform.position + (new Vector3(Hoz, Vert) * Time.deltaTime* speed);
 
         rb.MovePosition(newPosition);
 

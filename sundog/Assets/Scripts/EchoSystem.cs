@@ -35,9 +35,9 @@ public class EchoSystem : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		timerScrollWheel += Time.deltaTime;
 
-		if(timerScrollWheel > 3.0f)
+        timerScrollWheel += Time.deltaTime;
+        if (timerScrollWheel > 3.0f)
 		{
 			foreach(GameObject go in echoList)
 			{
@@ -48,6 +48,13 @@ public class EchoSystem : MonoBehaviour
 
 
 		// 1 : choose your echo : WRISTLE, CLICK, STOMP
+
+        if(Input.GetMouseButtonDown(2))
+        {
+            timerScrollWheel = 0.0f;
+            echoList[i].SetActive(true);
+        }
+
 		if(Input.GetAxis("Mouse ScrollWheel") > 0.0f) //forward
 		{
 			timerScrollWheel = 0.0f;
@@ -78,59 +85,72 @@ public class EchoSystem : MonoBehaviour
 			echoList [i].SetActive (true);
 		}
 
-		//2 : choose the oriention of the the echo
 
-		if(Input.GetMouseButtonDown(1))
-		{
-			posMouseBeforeScale = Vector2.zero;
 
-			if (echoList [i].GetComponent<Echo>().index == SoundProjector.ProjectorType.stomp) { 
+        //2 : choose the oriention of the the echo
+        if (echoList[i].activeSelf)
+        {
+            if (Input.GetMouseButtonDown(1))
+            {
+                posMouseBeforeScale = Vector2.zero;
 
-				return;
-			} else {
-				//orientation
-                Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.stomp)
+                {
 
-                orientationEcho = pos - this.transform.position;
-			//do scaling
-				posMouseBeforeScale = pos;
+                    return;
+                }
+                else
+                {
+                    //orientation
+                    Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+                    orientationEcho = pos - this.transform.position;
+                    //do scaling
+                    posMouseBeforeScale = pos;
+                }
+                timerScrollWheel = 0;
+
             }
 
-		}
+            //3 :  move up and down to scale the radius of the echo
+            //4 : release the mouse button to throw the echo
 
-		//3 :  move up and down to scale the radius of the echo
-		//4 : release the mouse button to throw the echo
+            if (Input.GetMouseButtonUp(1))
+            {
+                if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.stomp)
+                { // STOMP
+                    scaleEcho = 0;
+                    echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, 360, 0);
+                    SendSignal(SoundProjector.ProjectorType.stomp, 360, Vector2.up);
 
-		if(Input.GetMouseButtonUp(1))
-		{
-			if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.stomp) { // STOMP
-                scaleEcho = 0;
-                echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, 360, 0);
-                SendSignal(SoundProjector.ProjectorType.stomp,360, Vector2.up);
-
-                return;
-			} else {
-                Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                scaleEcho = Vector2.Distance(posMouseBeforeScale, pos);
-
-                float arc = 360-((scaleEcho / 6)*360);
-                arc = Mathf.Max(arc, 15);
-
-                if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.whistle) {
-
-                    echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, arc, SoundProjector.GetFullAngle(orientationEcho));
-                    SendSignal(SoundProjector.ProjectorType.whistle, arc, orientationEcho);
-
-                } else if(echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.click)
-                {
-                    echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, arc, SoundProjector.GetFullAngle(orientationEcho));
-                    SendSignal(SoundProjector.ProjectorType.click, arc, orientationEcho);
+                    return;
                 }
+                else
+                {
+                    Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    scaleEcho = Vector2.Distance(posMouseBeforeScale, pos);
 
-			}
+                    float arc = 360 - ((scaleEcho / 6) * 360);
+                    arc = Mathf.Max(arc, 15);
 
-		}
+                    if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.whistle)
+                    {
 
+                        echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, arc, SoundProjector.GetFullAngle(orientationEcho));
+                        SendSignal(SoundProjector.ProjectorType.whistle, arc, orientationEcho);
+
+                    }
+                    else if (echoList[i].GetComponent<Echo>().index == SoundProjector.ProjectorType.click)
+                    {
+                        echoList[i].GetComponent<Echo>().SpawnParticleSystem(transform.position, arc, SoundProjector.GetFullAngle(orientationEcho));
+                        SendSignal(SoundProjector.ProjectorType.click, arc, orientationEcho);
+                    }
+
+                }
+                timerScrollWheel = 0.0f;
+            }
+        }
+       
         if (!Input.GetMouseButton(1))
         {
             float rawAngle;
