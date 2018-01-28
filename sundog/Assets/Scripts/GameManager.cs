@@ -101,14 +101,14 @@ public class GameManager : MonoBehaviour
     //delete all of the existing monsters if there are any
     int numberOfActiveMonsters = Monsters.Count;
     for (int i = numberOfActiveMonsters - 1; i >= 0; --i) {
-      Destroy(Monsters[i]);
+      Destroy(Monsters[i].gameObject);
     }
     Monsters.Clear();
 
     //delete all of the existing monsters if there are any
     int numberOfActiveDogs = Dogs.Count;
     for (int i = numberOfActiveDogs - 1; i >= 0; --i) {
-      Destroy(Dogs[i]);
+      Destroy(Dogs[i].gameObject);
     }
     Dogs.Clear();
   }
@@ -120,7 +120,7 @@ public class GameManager : MonoBehaviour
     int numberOfPlayersInLevel = playerManagers.Length;
     for(int i = numberOfPlayersInLevel - 1; i >= 0; --i) 
     {
-      Destroy(playerManagers[i]);
+      Destroy(playerManagers[i].gameObject);
     }
 
     GameObject _player = Instantiate (Player, Vector2.zero, Quaternion.identity);
@@ -144,7 +144,7 @@ public class GameManager : MonoBehaviour
 			//delete all of the existing monsters if there are any
 			int numberOfActiveDogs = Dogs.Count;
 			for (int i = numberOfActiveDogs - 1; i >= 0; --i) {
-				Destroy (Dogs [i]);
+				Destroy (Dogs [i].gameObject);
 			}
 			Dogs.Clear ();
 		}
@@ -181,7 +181,7 @@ public class GameManager : MonoBehaviour
 			//delete all of the existing monsters if there are any
 			int numberOfActiveMonsters = Monsters.Count;
 			for (int i = numberOfActiveMonsters - 1; i >= 0; --i) {
-				Destroy (Monsters [i]);
+				Destroy (Monsters [i].gameObject);
 			}
 			Monsters.Clear ();
 		}
