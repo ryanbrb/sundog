@@ -222,13 +222,16 @@ public class GameManager : MonoBehaviour
 
 		//spawn monsters at all spawn locations
 		for (int i = 0; i < numberOfSpawnLocations; ++i) {
+			GameObject monsterGameObject;
 			if (i < (numberOfSpawnLocations / 2)) {
-				GameObject monsterGameObject = Instantiate (MonsterPrefab, MonsterSpawnPositions [i].position, MonsterSpawnPositions [i].rotation);
+				monsterGameObject = Instantiate (MonsterPrefab, MonsterSpawnPositions [i].position, MonsterSpawnPositions [i].rotation);
 				Monsters.Add (monsterGameObject.GetComponent<MonsterManager> ());
 			} else {
-				GameObject monsterGameObject = Instantiate (MonsterPrefab2, MonsterSpawnPositions [i].position, MonsterSpawnPositions [i].rotation);
+				monsterGameObject = Instantiate (MonsterPrefab2, MonsterSpawnPositions [i].position, MonsterSpawnPositions [i].rotation);
 				Monsters.Add (monsterGameObject.GetComponent<MonsterManager> ());
 			}
+			int index = i + 1;
+			monsterGameObject.name = "monster" + index.ToString ();
 		}
 	}
 
@@ -498,7 +501,7 @@ public class GameManager : MonoBehaviour
 
 
 
-	
+	bool boolbool = false;
 	// Update is called once per frame
 	void Update ()
 	{

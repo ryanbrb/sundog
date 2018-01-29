@@ -19,7 +19,7 @@ public class AIFollowTargetInRange : MonoBehaviour
 
 	;
 
-	public bool iAmChasingThePlayer = false;
+	public bool chasingThePlayer = false;
 
 	//member variables
 	NavMeshAgent m_agent;
@@ -54,7 +54,7 @@ public class AIFollowTargetInRange : MonoBehaviour
 //					this.GetComponentInParent<MonsterManager> ().SetAction(MonsterManager.Action.NOTHING);
 //					boolbool = true;
 //				}
-				iAmChasingThePlayer = false;
+				chasingThePlayer = false;
 
 				m_fStateTimer = LineOfSightCheckFrequency;
 				//if you're searching, go about your normal behavior
@@ -74,7 +74,7 @@ public class AIFollowTargetInRange : MonoBehaviour
 //					this.GetComponentInParent<MonsterManager> ().SetAction(MonsterManager.Action.ATTACK);
 //					boolbool = false;
 //				}
-				iAmChasingThePlayer = true;
+				chasingThePlayer = true;
 
 				m_fStateTimer = LineOfSightCheckFrequencyDuringFollow;
 				//if we've found a target we are no longer

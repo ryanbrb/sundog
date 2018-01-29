@@ -20,6 +20,8 @@ public class MonsterManager : MonoBehaviour {
     Animator myAnimator;
     Transform child;
 
+	public static bool iAmChasingThePlayer = false;
+
     // Use this for initialization
     void Start () {
 		audio = GetComponent<AudioSource> ();
@@ -134,5 +136,9 @@ public class MonsterManager : MonoBehaviour {
 			}
 		}
         child.eulerAngles = new Vector3(0, 0, 0);
+
+
+
+		iAmChasingThePlayer = GetComponent<AIFollowTargetInRange> ().chasingThePlayer;
     }
 }

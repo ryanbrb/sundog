@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 114651657749236592}
   - component: {fileID: 58180919955805282}
   - component: {fileID: 114662702903032486}
+  - component: {fileID: 114321013009681458}
   m_Layer: 0
   m_Name: Monster 1
   m_TagString: Untagged
@@ -170,13 +171,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114321013009681458
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729810433707032}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdffe5a572974744dba1a5669402a798, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1437106059189570, guid: c107a9a011267144e9a0e9ce9136807b, type: 2}
+  followDistanceThreshold: 0.25
 --- !u!114 &114651657749236592
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1729810433707032}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bef73ee6a9cb0964995c9475d3ec5eca, type: 3}
   m_Name: 
@@ -185,6 +199,7 @@ MonoBehaviour:
   LineOfSightCheckFrequency: 1.5
   LineOfSightCheckFrequencyDuringFollow: 0.5
   SightRadius: 15
+  chasingThePlayer: 0
 --- !u!114 &114662702903032486
 MonoBehaviour:
   m_ObjectHideFlags: 1
